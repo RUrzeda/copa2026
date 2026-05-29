@@ -84,7 +84,7 @@ export function TeamsPage() {
         [m.awayTeam.id, m.awayTeam]
       ])
     ).values()
-  )
+  ).filter(t => t.id != null && t.name != null && t.name !== 'None' && t.tla !== 'None')
 
   const teamGroups = (data?.standings ?? []).reduce((acc, s) => {
     s.table.forEach(entry => {

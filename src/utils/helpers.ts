@@ -54,13 +54,15 @@ export function getStatusLabel(status: MatchStatus): string {
 
 export function getStageLabel(stage: MatchStage | string): string {
   const labels: Record<string, string> = {
-    GROUP_STAGE: 'Fase de Grupos',
-    ROUND_OF_32: 'Oitavas de Final',
-    ROUND_OF_16: 'Oitavas de Final',
+    GROUP_STAGE:    'Fase de Grupos',
+    LAST_32:        'Rodada de 32',
+    LAST_16:        'Oitavas de Final',
+    ROUND_OF_32:    'Rodada de 32',
+    ROUND_OF_16:    'Oitavas de Final',
     QUARTER_FINALS: 'Quartas de Final',
-    SEMI_FINALS: 'Semifinais',
-    THIRD_PLACE: '3º Lugar',
-    FINAL: 'Final',
+    SEMI_FINALS:    'Semifinais',
+    THIRD_PLACE:    '3º Lugar',
+    FINAL:          'Final',
   }
   return labels[stage] ?? stage
 }
