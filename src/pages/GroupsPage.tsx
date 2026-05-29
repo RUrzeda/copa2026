@@ -1,4 +1,5 @@
 import { Users } from 'lucide-react'
+import { AdLeaderboard } from '../components/ui/AdBanner'
 import { Card } from '../components/ui/Card'
 import { TeamFlag } from '../components/ui/TeamFlag'
 import { Badge } from '../components/ui/Badge'
@@ -156,6 +157,8 @@ export function GroupsPage() {
           {standings.length} grupos · Top 2 de cada grupo + 8 melhores 3ºs avançam para as oitavas
         </p>
       </div>
+
+      <AdLeaderboard slot="1122334455" className="mb-2" />
 
       {standings.length === 0 ? (
         <div className="text-center py-20 text-slate-600">
