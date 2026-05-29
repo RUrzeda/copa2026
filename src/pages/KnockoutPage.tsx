@@ -45,10 +45,11 @@ const FINAL_CY     = TITLE_H + TOTAL_H / 2           // connector feeds here (y 
 const FINAL_TOP    = FINAL_CY - CARD_H / 2           // card top y
 const FINAL_LABEL_TOP = FINAL_TOP - 22               // "🏆 Final" label directly above card
 
-// 3rd place: offset to the right of the Final card
-const THIRD_COL_X  = FINAL_COL_X + CONN_W            // slightly more to the right
-const THIRD_CY     = FINAL_CY + CARD_H / 2 + 48      // below Final
-const THIRD_TOP    = THIRD_CY - CARD_H / 2
+// 3rd place: same height as Final, to the right with visible gap
+const THIRD_GAP    = 48                               // px gap between Final and 3rd place
+const THIRD_COL_X  = FINAL_COL_X + COL_W + THIRD_GAP // right of Final card
+const THIRD_TOP    = FINAL_TOP                        // same vertical position as Final
+const THIRD_LABEL_TOP = FINAL_LABEL_TOP               // same label height
 
 const CONTAINER_W_FULL = THIRD_COL_X + COL_W         // wider to fit 3rd place
 
@@ -334,20 +335,33 @@ export function KnockoutPage() {
             <MatchCard match={final} />
           </div>
 
-          {/* 3º Lugar label + card — slightly to the right of Final */}
+          {/* 3º Lugar label — same height as "🏆 Final" */}
           <div
             style={{
               position: 'absolute',
               left: THIRD_COL_X,
-              top:  THIRD_TOP - 20,
+              top:  THIRD_LABEL_TOP,
               width: COL_W,
+              height: 20,
+            }}
+            className="flex items-center justify-center"
+          >
+            <span className="text-[11px] text-slate-500 font-bold uppercase tracking-widest">
+              3º Lugar
+            </span>
+          </div>
+
+          {/* 3º Lugar card — same vertical position as Final card */}
+          <div
+            style={{
+              position: 'absolute',
+              left:   THIRD_COL_X,
+              top:    THIRD_TOP,
+              width:  COL_W,
+              height: CARD_H,
+              zIndex: 1,
             }}
           >
-            <div className="text-center mb-1.5">
-              <span className="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">
-                3º Lugar
-              </span>
-            </div>
             <MatchCard match={third} />
           </div>
         </div>
