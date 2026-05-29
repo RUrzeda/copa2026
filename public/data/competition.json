@@ -1,0 +1,14 @@
+{
+  "id": 2000,
+  "name": "FIFA World Cup",
+  "code": "WC",
+  "type": "CUP",
+  "emblem": "https://crests.football-data.org/FIFA_WC.png",
+  "currentSeason": {
+    "id": 1149,
+    "startDate": "2026-06-11",
+    "endDate": "2026-07-19",
+    "currentMatchday": 1
+  },
+  "lastUpdated": "2026-05-29T00:00:00Z"
+}

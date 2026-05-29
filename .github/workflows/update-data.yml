@@ -1,0 +1,48 @@
+name: Auto-update data
+
+on:
+  schedule:
+    # During World Cup (Jun 11 – Jul 19 2026): every 5 minutes on match days
+    # Simplified: every 5 minutes around match hours (UTC 14–23), hourly otherwise
+    - cron: '*/5 14-23 11-30 6 *'    # Jun 11–30, 14:00–23:59 UTC (match window)
+    - cron: '*/5 0-3 11-30 6 *'      # Jun 11–30, 00:00–03:59 UTC (late match window)
+    - cron: '*/5 14-23 1-19 7 *'     # Jul 1–19, match window
+    - cron: '*/5 0-3 1-19 7 *'       # Jul 1–19, late match window
+    - cron: '0 * * * *'              # Every hour (fallback / non-match hours)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch latest data
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+        run: node scripts/fetch-data.js
+
+      - name: Install dependencies for build
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          commit_message: 'data: auto-update ${{ github.event.repository.updated_at }}'
+          keep_files: false

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #050d1a;
+    color: #f1f5f9;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a1628;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1a3352;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f0b429;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+
+  .bg-hero-gradient {
+    background: linear-gradient(135deg, #050d1a 0%, #0d2040 50%, #051020 100%);
+  }
+
+  .bg-card-gradient {
+    background: linear-gradient(180deg, #0d1b2e 0%, #0a1628 100%);
+  }
+
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, #fbbf24 0%, #f0b429 50%, #d97706 100%);
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #fbbf24, #d97706);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
