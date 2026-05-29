@@ -39,12 +39,18 @@ function cardCenterY(roundIdx: number, matchIdx: number): number {
 /** Pixel X of the left edge of a round column */
 function colX(roundIdx: number): number { return roundIdx * COL_STRIDE }
 
-// Final + 3rd place positions (in the 5th "column" area)
-const FINAL_COL_X  = N_ROUNDS * COL_STRIDE
-const FINAL_CY     = TITLE_H + TOTAL_H / 2          // = 32 + 608 = 640px  (connector feeds here)
-const FINAL_TOP    = FINAL_CY - CARD_H / 2          // card top
-const THIRD_CY     = FINAL_CY + CARD_H / 2 + 50     // below Final with gap
+// Final + 3rd place positions
+const FINAL_COL_X  = N_ROUNDS * COL_STRIDE           // x of Final card
+const FINAL_CY     = TITLE_H + TOTAL_H / 2           // connector feeds here (y center)
+const FINAL_TOP    = FINAL_CY - CARD_H / 2           // card top y
+const FINAL_LABEL_TOP = FINAL_TOP - 22               // "🏆 Final" label directly above card
+
+// 3rd place: offset to the right of the Final card
+const THIRD_COL_X  = FINAL_COL_X + CONN_W            // slightly more to the right
+const THIRD_CY     = FINAL_CY + CARD_H / 2 + 48      // below Final
 const THIRD_TOP    = THIRD_CY - CARD_H / 2
+
+const CONTAINER_W_FULL = THIRD_COL_X + COL_W         // wider to fit 3rd place
 
 // ─── Match card ────────────────────────────────────────────────────────────────
 function MatchCard({ match, width = COL_W }: { match: Match | null; width?: number }) {
@@ -252,9 +258,9 @@ export function KnockoutPage() {
         <div
           style={{
             position: 'relative',
-            width:  CONTAINER_W,
+            width:  CONTAINER_W_FULL,
             height: CONTAINER_H,
-            minWidth: CONTAINER_W,
+            minWidth: CONTAINER_W_FULL,
           }}
         >
           {/* SVG connector lines (drawn under the cards) */}
@@ -279,12 +285,18 @@ export function KnockoutPage() {
             </div>
           ))}
 
-          {/* Final column title */}
+          {/* "🏆 Final" label — directly above the Final card */}
           <div
-            style={{ position: 'absolute', left: FINAL_COL_X, top: 0, width: COL_W, height: TITLE_H }}
+            style={{
+              position: 'absolute',
+              left: FINAL_COL_X,
+              top: FINAL_LABEL_TOP,
+              width: COL_W,
+              height: 20,
+            }}
             className="flex items-center justify-center"
           >
-            <span className="text-[10px] font-bold uppercase tracking-widest" style={{ color: GOLD }}>
+            <span className="text-[11px] font-bold uppercase tracking-widest" style={{ color: GOLD }}>
               🏆 Final
             </span>
           </div>
@@ -322,11 +334,11 @@ export function KnockoutPage() {
             <MatchCard match={final} />
           </div>
 
-          {/* 3rd place label + card */}
+          {/* 3º Lugar label + card — slightly to the right of Final */}
           <div
             style={{
               position: 'absolute',
-              left: FINAL_COL_X,
+              left: THIRD_COL_X,
               top:  THIRD_TOP - 20,
               width: COL_W,
             }}
