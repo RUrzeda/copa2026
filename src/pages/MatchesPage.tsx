@@ -30,19 +30,19 @@ function MatchCard({ match }: { match: Match }) {
 
   return (
     <div className={clsx(
-      'flex items-center gap-4 p-4 rounded-xl border transition-all',
+      'flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-xl border transition-all',
       live
         ? 'border-red-500/20 bg-red-500/5 shadow-lg shadow-red-500/5'
         : 'border-navy-700/50 bg-navy-800/20 hover:bg-navy-800/40'
     )}>
       {/* Status */}
-      <div className="w-20 text-center flex-shrink-0">
+      <div className="w-14 sm:w-20 text-center flex-shrink-0">
         {live ? (
           <Badge label="Ao Vivo" variant="live" pulse />
         ) : finished ? (
-          <Badge label="Encerrado" variant="finished" />
+          <Badge label="Enc." variant="finished" />
         ) : (
-          <div className="font-mono font-bold text-slate-300 text-lg">{formatMatchTime(match.utcDate)}</div>
+          <div className="font-mono font-bold text-slate-300 text-sm sm:text-lg">{formatMatchTime(match.utcDate)}</div>
         )}
         {match.group && (
           <div className="text-[10px] text-slate-600 mt-1">{getGroupLabel(match.group)}</div>
@@ -50,37 +50,39 @@ function MatchCard({ match }: { match: Match }) {
       </div>
 
       {/* Home */}
-      <div className="flex items-center gap-3 flex-1 min-w-0 justify-end">
-        <span className={clsx('font-semibold text-sm sm:text-base truncate text-right', homeWon ? 'text-white' : finished ? 'text-slate-500' : 'text-slate-200')}>
-          {match.homeTeam.shortName}
+      <div className="flex items-center gap-1.5 sm:gap-3 flex-1 min-w-0 justify-end">
+        <span className={clsx('font-semibold text-xs sm:text-base truncate text-right', homeWon ? 'text-white' : finished ? 'text-slate-500' : 'text-slate-200')}>
+          <span className="hidden sm:inline">{match.homeTeam.shortName}</span>
+          <span className="sm:hidden">{match.homeTeam.tla || match.homeTeam.shortName}</span>
         </span>
-        <TeamFlag crest={match.homeTeam.crest} name={match.homeTeam.name} size="md" className="flex-shrink-0" />
+        <TeamFlag crest={match.homeTeam.crest} name={match.homeTeam.name} size="sm" className="flex-shrink-0" />
       </div>
 
       {/* Score */}
-      <div className="flex-shrink-0 w-20 text-center">
+      <div className="flex-shrink-0 w-14 sm:w-20 text-center">
         {finished || live ? (
           <div className={clsx(
-            'font-display font-bold text-2xl rounded-xl px-2 py-1',
+            'font-display font-bold text-base sm:text-2xl rounded-xl px-1.5 sm:px-2 py-1',
             live ? 'text-red-300 bg-red-500/10' : 'text-white bg-navy-700'
           )}>
             {formatScore(match)}
           </div>
         ) : (
-          <div className="font-bold text-slate-600 text-xl">vs</div>
+          <div className="font-bold text-slate-600 text-base sm:text-xl">vs</div>
         )}
         {match.score.duration !== 'REGULAR' && finished && (
           <div className="text-[10px] text-slate-600 mt-0.5">
-            {match.score.duration === 'EXTRA_TIME' ? 'Prorrogação' : 'Pênaltis'}
+            {match.score.duration === 'EXTRA_TIME' ? 'Prorr.' : 'Pên.'}
           </div>
         )}
       </div>
 
       {/* Away */}
-      <div className="flex items-center gap-3 flex-1 min-w-0">
-        <TeamFlag crest={match.awayTeam.crest} name={match.awayTeam.name} size="md" className="flex-shrink-0" />
-        <span className={clsx('font-semibold text-sm sm:text-base truncate', awayWon ? 'text-white' : finished ? 'text-slate-500' : 'text-slate-200')}>
-          {match.awayTeam.shortName}
+      <div className="flex items-center gap-1.5 sm:gap-3 flex-1 min-w-0">
+        <TeamFlag crest={match.awayTeam.crest} name={match.awayTeam.name} size="sm" className="flex-shrink-0" />
+        <span className={clsx('font-semibold text-xs sm:text-base truncate', awayWon ? 'text-white' : finished ? 'text-slate-500' : 'text-slate-200')}>
+          <span className="hidden sm:inline">{match.awayTeam.shortName}</span>
+          <span className="sm:hidden">{match.awayTeam.tla || match.awayTeam.shortName}</span>
         </span>
       </div>
 

@@ -83,22 +83,23 @@ export function ScorersPage() {
       </div>
 
       {/* Summary cards */}
-      <div className="grid grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-8">
         {scorers.slice(0, 3).map((s, i) => (
           <div
             key={s.player.id}
             className={clsx(
-              'rounded-xl border p-4 text-center',
+              'rounded-xl border p-3 sm:p-4 text-center',
               i === 0 ? 'border-gold-500/30 bg-gold-500/5' :
               i === 1 ? 'border-slate-400/20' : 'border-amber-700/20'
             )}
           >
-            <TeamFlag crest={s.team.crest} name={s.team.name} size="lg" className="mx-auto mb-2" />
-            <div className={clsx('font-display font-bold text-3xl mb-0.5', i === 0 ? 'text-gold-400' : 'text-white')}>
+            <TeamFlag crest={s.team.crest} name={s.team.name} size="md" className="mx-auto mb-2 sm:hidden" />
+            <TeamFlag crest={s.team.crest} name={s.team.name} size="lg" className="mx-auto mb-2 hidden sm:block" />
+            <div className={clsx('font-display font-bold text-2xl sm:text-3xl mb-0.5', i === 0 ? 'text-gold-400' : 'text-white')}>
               {s.goals}
             </div>
-            <div className="text-sm font-medium text-slate-200 truncate">{s.player.name.split(' ').pop()}</div>
-            <div className="text-xs text-slate-600">{s.team.tla}</div>
+            <div className="text-xs sm:text-sm font-medium text-slate-200 truncate">{s.player.name.split(' ').pop()}</div>
+            <div className="text-[10px] sm:text-xs text-slate-600">{s.team.tla}</div>
           </div>
         ))}
       </div>

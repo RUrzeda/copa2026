@@ -53,11 +53,11 @@ function GroupRow({ entry, index }: { entry: StandingEntry; index: number }) {
         </div>
       </td>
       <td className="py-3 px-3 text-center text-sm text-slate-400">{entry.playedGames}</td>
-      <td className="py-3 px-3 text-center text-sm text-slate-300">{entry.won}</td>
-      <td className="py-3 px-3 text-center text-sm text-slate-300">{entry.draw}</td>
-      <td className="py-3 px-3 text-center text-sm text-slate-300">{entry.lost}</td>
-      <td className="py-3 px-3 text-center text-sm text-slate-400">{entry.goalsFor}</td>
-      <td className="py-3 px-3 text-center text-sm text-slate-400">{entry.goalsAgainst}</td>
+      <td className="hidden sm:table-cell py-3 px-3 text-center text-sm text-slate-300">{entry.won}</td>
+      <td className="hidden sm:table-cell py-3 px-3 text-center text-sm text-slate-300">{entry.draw}</td>
+      <td className="hidden sm:table-cell py-3 px-3 text-center text-sm text-slate-300">{entry.lost}</td>
+      <td className="hidden sm:table-cell py-3 px-3 text-center text-sm text-slate-400">{entry.goalsFor}</td>
+      <td className="hidden sm:table-cell py-3 px-3 text-center text-sm text-slate-400">{entry.goalsAgainst}</td>
       <td className={clsx(
         'py-3 px-3 text-center text-sm font-semibold',
         entry.goalDifference > 0 ? 'text-pitch-500' :
@@ -68,7 +68,7 @@ function GroupRow({ entry, index }: { entry: StandingEntry; index: number }) {
       <td className="py-3 px-4 text-center">
         <span className="font-display font-bold text-base text-white">{entry.points}</span>
       </td>
-      <td className="py-3 px-4">
+      <td className="hidden md:table-cell py-3 px-4">
         <div className="flex items-center gap-1 justify-center">
           {formChars.length === 0 ? (
             <span className="text-xs text-slate-700">—</span>

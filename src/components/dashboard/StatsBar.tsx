@@ -11,13 +11,13 @@ interface StatItemProps {
 
 function StatItem({ icon, value, label, highlight = false }: StatItemProps) {
   return (
-    <div className={`flex items-center gap-3 px-4 py-3 rounded-xl border ${highlight ? 'border-gold-500/20 bg-gold-500/5' : 'border-navy-700 bg-navy-800/40'}`}>
-      <div className={`${highlight ? 'text-gold-400' : 'text-slate-500'}`}>{icon}</div>
-      <div>
-        <div className={`font-display font-bold text-xl ${highlight ? 'text-gold-400' : 'text-white'}`}>
+    <div className={`flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-3 rounded-xl border ${highlight ? 'border-gold-500/20 bg-gold-500/5' : 'border-navy-700 bg-navy-800/40'}`}>
+      <div className={`flex-shrink-0 ${highlight ? 'text-gold-400' : 'text-slate-500'}`}>{icon}</div>
+      <div className="min-w-0">
+        <div className={`font-display font-bold text-base sm:text-xl truncate ${highlight ? 'text-gold-400' : 'text-white'}`}>
           {value}
         </div>
-        <div className="text-xs text-slate-600">{label}</div>
+        <div className="text-[10px] sm:text-xs text-slate-600">{label}</div>
       </div>
     </div>
   )
