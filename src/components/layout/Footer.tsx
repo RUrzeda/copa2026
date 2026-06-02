@@ -2,6 +2,7 @@ import { Trophy, RefreshCw } from 'lucide-react'
 import { useData } from '../../hooks/useData'
 import { formatMatchDate } from '../../utils/helpers'
 import { AffiliateBar } from '../ui/AffiliateBar'
+import { ShareSite } from '../ui/ShareButton'
 
 export function Footer() {
   const { lastUpdated, refetch } = useData()
@@ -37,8 +38,11 @@ export function Footer() {
             </button>
           </div>
 
-          <div className="text-xs text-slate-600">
-            © 2026 Copa 2026 Portal · Todos os direitos reservados
+          <div className="flex flex-col items-center md:items-end gap-2">
+            <ShareSite />
+            <div className="text-xs text-slate-600">
+              © 2026 Painel da Copa · Todos os direitos reservados
+            </div>
           </div>
         </div>
       </div>

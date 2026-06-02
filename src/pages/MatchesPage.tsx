@@ -10,6 +10,7 @@ import {
   getStatusLabel, isMatchLive, isMatchFinished,
   formatScore, getStageLabel, getGroupLabel, groupMatchesByDate, translateTeam
 } from '../utils/helpers'
+import { ShareMatch } from '../components/ui/ShareButton'
 import type { Match, MatchStage } from '../types'
 import clsx from 'clsx'
 
@@ -30,7 +31,7 @@ function MatchCard({ match }: { match: Match }) {
 
   return (
     <div className={clsx(
-      'flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-xl border transition-all',
+      'group flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-xl border transition-all',
       live
         ? 'border-red-500/20 bg-red-500/5 shadow-lg shadow-red-500/5'
         : 'border-navy-700/50 bg-navy-800/20 hover:bg-navy-800/40'
@@ -86,11 +87,18 @@ function MatchCard({ match }: { match: Match }) {
         </span>
       </div>
 
-      {/* Stage */}
-      <div className="hidden lg:block w-24 text-right flex-shrink-0">
+      {/* Stage + Share */}
+      <div className="hidden lg:flex flex-col items-end gap-1 w-28 flex-shrink-0">
         <div className="text-xs text-slate-600">{getStageLabel(match.stage)}</div>
-        {match.venue && <div className="text-[10px] text-slate-700 mt-0.5 truncate">{match.venue}</div>}
+        {match.venue && <div className="text-[10px] text-slate-700 truncate max-w-full">{match.venue}</div>}
+        {(finished || live) && <ShareMatch match={match} />}
       </div>
+      {/* Share — mobile (sempre visível) */}
+      {(finished || live) && (
+        <div className="lg:hidden flex-shrink-0">
+          <ShareMatch match={match} />
+        </div>
+      )}
     </div>
   )
 }
