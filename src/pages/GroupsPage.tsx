@@ -5,7 +5,7 @@ import { TeamFlag } from '../components/ui/TeamFlag'
 import { Badge } from '../components/ui/Badge'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { useData } from '../hooks/useData'
-import { getGroupLabel, getPositionStyle, getFormColor, translateTeam } from '../utils/helpers'
+import { getGroupLabel, getPositionStyle, translateTeam } from '../utils/helpers'
 import type { StandingEntry, GroupStanding } from '../types'
 import clsx from 'clsx'
 
@@ -20,15 +20,12 @@ const COL_HEADERS = [
   { key: 'gc', label: 'GC', title: 'Gols Contra' },
   { key: 'sg', label: 'SG', title: 'Saldo de Gols' },
   { key: 'pts', label: 'PTS', title: 'Pontos' },
-  { key: 'form', label: 'Forma', title: 'Últimos 5 jogos' },
 ]
 
 function GroupRow({ entry, index }: { entry: StandingEntry; index: number }) {
   const advances = index < 2
   const mayAdvance = index === 2
-  const formChars = (entry.form ?? '').split('').slice(-5)
-
-  return (
+return (
     <tr className={clsx(
       'border-b border-navy-700/50 transition-colors hover:bg-navy-800/30',
       advances && 'bg-pitch-500/5',
@@ -67,23 +64,6 @@ function GroupRow({ entry, index }: { entry: StandingEntry; index: number }) {
       </td>
       <td className="py-3 px-4 text-center">
         <span className="font-display font-bold text-base text-white">{entry.points}</span>
-      </td>
-      <td className="hidden md:table-cell py-3 px-4">
-        <div className="flex items-center gap-1 justify-center">
-          {formChars.length === 0 ? (
-            <span className="text-xs text-slate-700">—</span>
-          ) : (
-            formChars.map((result, i) => (
-              <span
-                key={i}
-                title={result === 'W' ? 'Vitória' : result === 'D' ? 'Empate' : 'Derrota'}
-                className={clsx('w-4 h-4 rounded-full text-[10px] flex items-center justify-center text-white font-bold', getFormColor(result))}
-              >
-                {result}
-              </span>
-            ))
-          )}
-        </div>
       </td>
     </tr>
   )
