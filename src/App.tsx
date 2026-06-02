@@ -9,6 +9,7 @@ import { ScorersPage } from './pages/ScorersPage'
 import { TeamsPage } from './pages/TeamsPage'
 import { StatsPage } from './pages/StatsPage'
 import { trackPageView } from './analytics'
+import { InstallPrompt } from './components/ui/InstallPrompt'
 
 const PAGE_TITLES: Record<string, string> = {
   '/':             'Dashboard — Painel da Copa 2026',
@@ -36,6 +37,7 @@ export default function App() {
   return (
     <HashRouter>
       <PageTracker />
+      <InstallPrompt />
       <Layout>
         <Routes>
           <Route path="/"              element={<HomePage />} />
