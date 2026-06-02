@@ -5,7 +5,7 @@ import { TeamFlag } from '../components/ui/TeamFlag'
 import { Badge } from '../components/ui/Badge'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { useData } from '../hooks/useData'
-import { getGroupLabel, getPositionStyle, getFormColor } from '../utils/helpers'
+import { getGroupLabel, getPositionStyle, getFormColor, translateTeam } from '../utils/helpers'
 import type { StandingEntry, GroupStanding } from '../types'
 import clsx from 'clsx'
 
@@ -47,7 +47,7 @@ function GroupRow({ entry, index }: { entry: StandingEntry; index: number }) {
         <div className="flex items-center gap-2.5">
           <TeamFlag crest={entry.team.crest} name={entry.team.name} size="sm" />
           <div>
-            <span className="text-sm text-slate-100 font-medium block">{entry.team.shortName}</span>
+            <span className="text-sm text-slate-100 font-medium block">{translateTeam(entry.team.shortName)}</span>
             <span className="text-xs text-slate-600 hidden md:block">{entry.team.tla}</span>
           </div>
         </div>

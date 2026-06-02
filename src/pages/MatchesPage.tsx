@@ -8,7 +8,7 @@ import { useData } from '../hooks/useData'
 import {
   formatFullDate, formatMatchDate, formatMatchTime,
   getStatusLabel, isMatchLive, isMatchFinished,
-  formatScore, getStageLabel, getGroupLabel, groupMatchesByDate
+  formatScore, getStageLabel, getGroupLabel, groupMatchesByDate, translateTeam
 } from '../utils/helpers'
 import type { Match, MatchStage } from '../types'
 import clsx from 'clsx'
@@ -52,8 +52,8 @@ function MatchCard({ match }: { match: Match }) {
       {/* Home */}
       <div className="flex items-center gap-1.5 sm:gap-3 flex-1 min-w-0 justify-end">
         <span className={clsx('font-semibold text-xs sm:text-base truncate text-right', homeWon ? 'text-white' : finished ? 'text-slate-500' : 'text-slate-200')}>
-          <span className="hidden sm:inline">{match.homeTeam.shortName}</span>
-          <span className="sm:hidden">{match.homeTeam.tla || match.homeTeam.shortName}</span>
+          <span className="hidden sm:inline">{translateTeam(match.homeTeam.shortName)}</span>
+          <span className="sm:hidden">{match.homeTeam.tla || translateTeam(match.homeTeam.shortName)}</span>
         </span>
         <TeamFlag crest={match.homeTeam.crest} name={match.homeTeam.name} size="sm" className="flex-shrink-0" />
       </div>
@@ -81,8 +81,8 @@ function MatchCard({ match }: { match: Match }) {
       <div className="flex items-center gap-1.5 sm:gap-3 flex-1 min-w-0">
         <TeamFlag crest={match.awayTeam.crest} name={match.awayTeam.name} size="sm" className="flex-shrink-0" />
         <span className={clsx('font-semibold text-xs sm:text-base truncate', awayWon ? 'text-white' : finished ? 'text-slate-500' : 'text-slate-200')}>
-          <span className="hidden sm:inline">{match.awayTeam.shortName}</span>
-          <span className="sm:hidden">{match.awayTeam.tla || match.awayTeam.shortName}</span>
+          <span className="hidden sm:inline">{translateTeam(match.awayTeam.shortName)}</span>
+          <span className="sm:hidden">{match.awayTeam.tla || translateTeam(match.awayTeam.shortName)}</span>
         </span>
       </div>
 

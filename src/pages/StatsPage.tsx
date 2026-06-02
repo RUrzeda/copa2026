@@ -3,7 +3,7 @@ import { Card, CardHeader } from '../components/ui/Card'
 import { TeamFlag } from '../components/ui/TeamFlag'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { useData } from '../hooks/useData'
-import { isMatchFinished, getGroupLabel } from '../utils/helpers'
+import { isMatchFinished, getGroupLabel, translateTeam } from '../utils/helpers'
 
 interface StatBarProps {
   label: string
@@ -151,7 +151,7 @@ export function StatsPage() {
                       <TeamFlag crest={team.crest} name={team.name} size="xs" />
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center justify-between mb-1">
-                          <span className="text-xs text-slate-300 truncate">{team.name}</span>
+                          <span className="text-xs text-slate-300 truncate">{translateTeam(team.name)}</span>
                           <span className="text-xs font-bold text-white ml-2">{team.goals}</span>
                         </div>
                         <div className="h-1.5 bg-navy-700 rounded-full overflow-hidden">

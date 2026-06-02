@@ -4,6 +4,7 @@ import { Card, CardHeader } from '../ui/Card'
 import { TeamFlag } from '../ui/TeamFlag'
 import { SkeletonCard } from '../ui/LoadingSpinner'
 import { useData } from '../../hooks/useData'
+import { translateTeam } from '../../utils/helpers'
 import type { Scorer } from '../../types'
 
 function ScorerRow({ scorer, rank }: { scorer: Scorer; rank: number }) {
@@ -26,7 +27,7 @@ function ScorerRow({ scorer, rank }: { scorer: Scorer; rank: number }) {
       {/* Player name */}
       <div className="flex-1 min-w-0">
         <div className="text-sm text-slate-200 font-medium truncate">{scorer.player.name}</div>
-        <div className="text-xs text-slate-600 truncate">{scorer.team.shortName}</div>
+        <div className="text-xs text-slate-600 truncate">{translateTeam(scorer.team.shortName)}</div>
       </div>
 
       {/* Goals */}

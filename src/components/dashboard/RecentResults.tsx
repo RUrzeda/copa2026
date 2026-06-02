@@ -4,7 +4,7 @@ import { Card, CardHeader } from '../ui/Card'
 import { TeamFlag } from '../ui/TeamFlag'
 import { SkeletonCard } from '../ui/LoadingSpinner'
 import { useData } from '../../hooks/useData'
-import { getRecentMatches, formatMatchDate, formatScore, getStageLabel } from '../../utils/helpers'
+import { getRecentMatches, formatMatchDate, formatScore, getStageLabel, translateTeam } from '../../utils/helpers'
 import type { Match } from '../../types'
 
 function ResultRow({ match }: { match: Match }) {
@@ -22,7 +22,7 @@ function ResultRow({ match }: { match: Match }) {
       {/* Home */}
       <div className="flex items-center gap-2 flex-1 min-w-0 justify-end">
         <span className={`text-sm font-semibold truncate text-right ${homeWon ? 'text-white' : 'text-slate-500'}`}>
-          {match.homeTeam.shortName}
+          {translateTeam(match.homeTeam.shortName)}
         </span>
         <div className="relative flex-shrink-0">
           <TeamFlag crest={match.homeTeam.crest} name={match.homeTeam.name} size="sm" />
@@ -46,7 +46,7 @@ function ResultRow({ match }: { match: Match }) {
           )}
         </div>
         <span className={`text-sm font-semibold truncate ${awayWon ? 'text-white' : 'text-slate-500'}`}>
-          {match.awayTeam.shortName}
+          {translateTeam(match.awayTeam.shortName)}
         </span>
       </div>
 

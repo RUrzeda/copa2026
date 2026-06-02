@@ -7,7 +7,7 @@ import { SkeletonCard } from '../ui/LoadingSpinner'
 import { useData } from '../../hooks/useData'
 import {
   getLiveMatches, getUpcomingMatches, formatMatchDate, formatMatchTime,
-  getStatusLabel, isMatchLive, isMatchFinished, formatScore, getStageLabel
+  getStatusLabel, isMatchLive, isMatchFinished, formatScore, getStageLabel, translateTeam
 } from '../../utils/helpers'
 import type { Match } from '../../types'
 
@@ -35,7 +35,7 @@ function MatchRow({ match }: { match: Match }) {
       {/* Home Team */}
       <div className="flex items-center gap-2 flex-1 min-w-0 justify-end">
         <span className="text-sm text-slate-200 font-medium truncate text-right">
-          {match.homeTeam.shortName}
+          {translateTeam(match.homeTeam.shortName)}
         </span>
         <TeamFlag crest={match.homeTeam.crest} name={match.homeTeam.name} size="sm" />
       </div>
@@ -55,7 +55,7 @@ function MatchRow({ match }: { match: Match }) {
       <div className="flex items-center gap-2 flex-1 min-w-0">
         <TeamFlag crest={match.awayTeam.crest} name={match.awayTeam.name} size="sm" />
         <span className="text-sm text-slate-200 font-medium truncate">
-          {match.awayTeam.shortName}
+          {translateTeam(match.awayTeam.shortName)}
         </span>
       </div>
 

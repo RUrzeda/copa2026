@@ -4,6 +4,7 @@ import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { useData } from '../hooks/useData'
 import type { Scorer } from '../types'
 import clsx from 'clsx'
+import { translateTeam, translateNationality } from '../utils/helpers'
 
 function ScorerRow({ scorer, rank }: { scorer: Scorer; rank: number }) {
   const top3 = rank <= 3
@@ -32,7 +33,7 @@ function ScorerRow({ scorer, rank }: { scorer: Scorer; rank: number }) {
         <TeamFlag crest={scorer.team.crest} name={scorer.team.name} size="md" className="flex-shrink-0" />
         <div className="min-w-0">
           <div className="font-semibold text-slate-100 text-base truncate">{scorer.player.name}</div>
-          <div className="text-xs text-slate-500">{scorer.team.name} · {scorer.player.nationality}</div>
+          <div className="text-xs text-slate-500">{translateTeam(scorer.team.name)} · {translateNationality(scorer.player.nationality)}</div>
         </div>
       </div>
 

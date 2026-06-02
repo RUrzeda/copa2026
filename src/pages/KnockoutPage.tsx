@@ -1,7 +1,7 @@
 import { Trophy } from 'lucide-react'
 import { useData } from '../hooks/useData'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
-import { isMatchFinished, isMatchLive } from '../utils/helpers'
+import { isMatchFinished, isMatchLive, translateTeam } from '../utils/helpers'
 import type { Match } from '../types'
 
 // ─── Geometry ─────────────────────────────────────────────────────────────────
@@ -95,7 +95,7 @@ function MatchCard({ match, width = COL_W }: { match: Match | null; width?: numb
         <span className={`text-[11px] font-semibold flex-1 truncate ${
           won ? 'text-white' : finished ? 'text-slate-500' : 'text-slate-300'
         }`}>
-          {team?.tla || team?.shortName || '?'}
+          {team?.tla || translateTeam(team?.shortName) || '?'}
         </span>
         {(finished || live) && (
           <span className={`text-xs font-bold tabular-nums ${won ? 'text-white' : 'text-slate-600'}`}>

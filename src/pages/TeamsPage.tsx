@@ -3,7 +3,7 @@ import { Shield, Search } from 'lucide-react'
 import { TeamFlag } from '../components/ui/TeamFlag'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { useData } from '../hooks/useData'
-import { getGroupLabel, isMatchFinished, getMatchResult } from '../utils/helpers'
+import { getGroupLabel, isMatchFinished, getMatchResult, translateTeam } from '../utils/helpers'
 import type { Team, Match } from '../types'
 import clsx from 'clsx'
 
@@ -34,7 +34,7 @@ function TeamCard({ team, matches, group }: { team: Team; matches: Match[]; grou
       <div className="flex items-center gap-3 mb-4">
         <TeamFlag crest={team.crest} name={team.name} size="xl" />
         <div className="min-w-0">
-          <div className="font-display font-bold text-base text-white truncate">{team.name}</div>
+          <div className="font-display font-bold text-base text-white truncate">{translateTeam(team.name)}</div>
           <div className="text-xs text-slate-500">{team.tla}</div>
           {group && (
             <div className="mt-1 text-[10px] text-gold-400 font-semibold uppercase tracking-wider">
@@ -96,6 +96,7 @@ export function TeamsPage() {
   const filtered = allTeams.filter(t =>
     search === '' ||
     t.name.toLowerCase().includes(search.toLowerCase()) ||
+    translateTeam(t.name).toLowerCase().includes(search.toLowerCase()) ||
     t.tla.toLowerCase().includes(search.toLowerCase())
   )
 
