@@ -31,17 +31,17 @@
     <!-- Theme -->
     <meta name="theme-color" content="#050d1a" />
     <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="ER89bpQwJHD6UkouO5r6cwlfgvg4wZ7Wv_NNP3fb8Os" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
 
-    <!-- Google Analytics 4 -->
-    <!-- GA_MEASUREMENT_ID will be injected at build time via VITE_GA_ID env var -->
+    <!-- Google Analytics 4 — ID injected at build time via VITE_GA_ID secret -->
     <script>
-      window.GA_ID = '';
-      if (window.GA_ID && window.GA_ID !== '') {
+      window.GA_ID = 'G-XHC4M7286H';
+      if (window.GA_ID && /^G-[A-Z0-9]+$/.test(window.GA_ID)) {
         var s = document.createElement('script');
         s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_ID;
         s.async = true;
@@ -54,11 +54,10 @@
       }
     </script>
 
-    <!-- Google AdSense -->
-    <!-- ADSENSE_ID will be injected at build time via VITE_ADSENSE_ID env var -->
+    <!-- Google AdSense — ID injected at build time via VITE_ADSENSE_ID secret -->
     <script>
       window.ADSENSE_ID = '';
-      if (window.ADSENSE_ID && window.ADSENSE_ID !== '') {
+      if (window.ADSENSE_ID && /^ca-pub-\d+$/.test(window.ADSENSE_ID)) {
         var as = document.createElement('script');
         as.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + window.ADSENSE_ID;
         as.async = true;
@@ -88,10 +87,10 @@
       }
     }
     </script>
-    <script type="module" crossorigin src="/assets/index-DPO6S5Am.js"></script>
+    <script type="module" crossorigin src="/assets/index-CKreoQ9A.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/vendor-Cb7RgQkZ.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-Cz4vKXSz.css">
-  </head>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dqin7X0g.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
   <body>
     <div id="root"></div>
   </body>
