@@ -1,7 +1,6 @@
 import { Trophy, RefreshCw } from 'lucide-react'
 import { useData } from '../../hooks/useData'
 import { formatMatchDate } from '../../utils/helpers'
-import { AffiliateBar } from '../ui/AffiliateBar'
 import { ShareSite } from '../ui/ShareButton'
 
 export function Footer() {
@@ -9,7 +8,6 @@ export function Footer() {
 
   return (
     <footer className="border-t border-navy-700 bg-navy-950 mt-12">
-      <AffiliateBar />
       <div className="max-w-screen-2xl mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
