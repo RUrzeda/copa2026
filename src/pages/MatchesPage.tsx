@@ -17,7 +17,8 @@ import clsx from 'clsx'
 const STAGES: { value: string; label: string }[] = [
   { value: 'all', label: 'Todos' },
   { value: 'GROUP_STAGE', label: 'Grupos' },
-  { value: 'ROUND_OF_32', label: 'Oitavas' },
+  { value: 'LAST_32', label: 'Rodada de 32' },
+  { value: 'LAST_16', label: 'Oitavas' },
   { value: 'QUARTER_FINALS', label: 'Quartas' },
   { value: 'SEMI_FINALS', label: 'Semifinais' },
   { value: 'FINAL', label: 'Final' },
