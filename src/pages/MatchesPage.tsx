@@ -181,7 +181,7 @@ export function MatchesPage() {
             <div key={date}>
               <div className="flex items-center gap-3 mb-3">
                 <h2 className="text-sm font-semibold text-slate-400 capitalize">
-                  {formatFullDate(`${date}T12:00:00Z`)}
+                  {formatFullDate(`${date}T00:00:00`)}
                 </h2>
                 <div className="flex-1 h-px bg-navy-700" />
                 <span className="text-xs text-slate-600">{grouped[date].length} jogos</span>

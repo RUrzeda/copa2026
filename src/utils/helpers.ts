@@ -281,9 +281,10 @@ export function getCountdownToWorldCup(): { days: number; hours: number; minutes
 
 export function groupMatchesByDate(matches: Match[]): Record<string, Match[]> {
   return matches.reduce((acc, match) => {
-    const date = match.utcDate.split('T')[0]
-    if (!acc[date]) acc[date] = []
-    acc[date].push(match)
+    // Use local date so a match at 22:00 local time isn't grouped under the next UTC day
+    const localDate = format(parseISO(match.utcDate), 'yyyy-MM-dd')
+    if (!acc[localDate]) acc[localDate] = []
+    acc[localDate].push(match)
     return acc
   }, {} as Record<string, Match[]>)
 }
