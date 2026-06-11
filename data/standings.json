@@ -7,6 +7,44 @@
       {
         "position": 1,
         "team": {
+          "id": 769,
+          "name": "Mexico",
+          "shortName": "Mexico",
+          "tla": "MEX",
+          "crest": "https://crests.football-data.org/769.svg"
+        },
+        "playedGames": 1,
+        "form": null,
+        "won": 1,
+        "draw": 0,
+        "lost": 0,
+        "points": 3,
+        "goalsFor": 1,
+        "goalsAgainst": 0,
+        "goalDifference": 1
+      },
+      {
+        "position": 2,
+        "team": {
+          "id": 772,
+          "name": "South Korea",
+          "shortName": "Korea Republic",
+          "tla": "KOR",
+          "crest": "https://crests.football-data.org/772.png"
+        },
+        "playedGames": 0,
+        "form": null,
+        "won": 0,
+        "draw": 0,
+        "lost": 0,
+        "points": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0
+      },
+      {
+        "position": 2,
+        "team": {
           "id": 798,
           "name": "Czechia",
           "shortName": "Czechia",
@@ -24,26 +62,7 @@
         "goalDifference": 0
       },
       {
-        "position": 2,
-        "team": {
-          "id": 769,
-          "name": "Mexico",
-          "shortName": "Mexico",
-          "tla": "MEX",
-          "crest": "https://crests.football-data.org/769.svg"
-        },
-        "playedGames": 0,
-        "form": null,
-        "won": 0,
-        "draw": 0,
-        "lost": 0,
-        "points": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0
-      },
-      {
-        "position": 3,
+        "position": 4,
         "team": {
           "id": 774,
           "name": "South Africa",
@@ -51,34 +70,15 @@
           "tla": "RSA",
           "crest": "https://crests.football-data.org/9396.svg"
         },
-        "playedGames": 0,
+        "playedGames": 1,
         "form": null,
         "won": 0,
         "draw": 0,
-        "lost": 0,
+        "lost": 1,
         "points": 0,
         "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0
-      },
-      {
-        "position": 4,
-        "team": {
-          "id": 772,
-          "name": "South Korea",
-          "shortName": "Korea Republic",
-          "tla": "KOR",
-          "crest": "https://crests.football-data.org/772.png"
-        },
-        "playedGames": 0,
-        "form": null,
-        "won": 0,
-        "draw": 0,
-        "lost": 0,
-        "points": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0
+        "goalsAgainst": 1,
+        "goalDifference": -1
       }
     ]
   },
@@ -107,7 +107,7 @@
         "goalDifference": 0
       },
       {
-        "position": 2,
+        "position": 1,
         "team": {
           "id": 828,
           "name": "Canada",
@@ -126,7 +126,7 @@
         "goalDifference": 0
       },
       {
-        "position": 3,
+        "position": 1,
         "team": {
           "id": 8030,
           "name": "Qatar",
@@ -145,7 +145,7 @@
         "goalDifference": 0
       },
       {
-        "position": 4,
+        "position": 1,
         "team": {
           "id": 788,
           "name": "Switzerland",
@@ -190,26 +190,7 @@
         "goalDifference": 0
       },
       {
-        "position": 2,
-        "team": {
-          "id": 815,
-          "name": "Morocco",
-          "shortName": "Morocco",
-          "tla": "MAR",
-          "crest": "https://crests.football-data.org/morocco.svg"
-        },
-        "playedGames": 0,
-        "form": null,
-        "won": 0,
-        "draw": 0,
-        "lost": 0,
-        "points": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0
-      },
-      {
-        "position": 3,
+        "position": 1,
         "team": {
           "id": 836,
           "name": "Haiti",
@@ -228,7 +209,26 @@
         "goalDifference": 0
       },
       {
-        "position": 4,
+        "position": 1,
+        "team": {
+          "id": 815,
+          "name": "Morocco",
+          "shortName": "Morocco",
+          "tla": "MAR",
+          "crest": "https://crests.football-data.org/morocco.svg"
+        },
+        "playedGames": 0,
+        "form": null,
+        "won": 0,
+        "draw": 0,
+        "lost": 0,
+        "points": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0
+      },
+      {
+        "position": 1,
         "team": {
           "id": 8873,
           "name": "Scotland",
@@ -256,11 +256,11 @@
       {
         "position": 1,
         "team": {
-          "id": 803,
-          "name": "Turkey",
-          "shortName": "Turkey",
-          "tla": "TUR",
-          "crest": "https://crests.football-data.org/803.svg"
+          "id": 779,
+          "name": "Australia",
+          "shortName": "Australia",
+          "tla": "AUS",
+          "crest": "https://crests.football-data.org/779.svg"
         },
         "playedGames": 0,
         "form": null,
@@ -273,26 +273,7 @@
         "goalDifference": 0
       },
       {
-        "position": 2,
-        "team": {
-          "id": 771,
-          "name": "United States",
-          "shortName": "USA",
-          "tla": "USA",
-          "crest": "https://crests.football-data.org/usa.svg"
-        },
-        "playedGames": 0,
-        "form": null,
-        "won": 0,
-        "draw": 0,
-        "lost": 0,
-        "points": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0
-      },
-      {
-        "position": 3,
+        "position": 1,
         "team": {
           "id": 761,
           "name": "Paraguay",
@@ -311,13 +292,32 @@
         "goalDifference": 0
       },
       {
-        "position": 4,
+        "position": 1,
         "team": {
-          "id": 779,
-          "name": "Australia",
-          "shortName": "Australia",
-          "tla": "AUS",
-          "crest": "https://crests.football-data.org/779.svg"
+          "id": 803,
+          "name": "Turkey",
+          "shortName": "Turkey",
+          "tla": "TUR",
+          "crest": "https://crests.football-data.org/803.svg"
+        },
+        "playedGames": 0,
+        "form": null,
+        "won": 0,
+        "draw": 0,
+        "lost": 0,
+        "points": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0
+      },
+      {
+        "position": 1,
+        "team": {
+          "id": 771,
+          "name": "United States",
+          "shortName": "USA",
+          "tla": "USA",
+          "crest": "https://crests.football-data.org/usa.svg"
         },
         "playedGames": 0,
         "form": null,
@@ -339,25 +339,6 @@
       {
         "position": 1,
         "team": {
-          "id": 759,
-          "name": "Germany",
-          "shortName": "Germany",
-          "tla": "GER",
-          "crest": "https://crests.football-data.org/759.svg"
-        },
-        "playedGames": 0,
-        "form": null,
-        "won": 0,
-        "draw": 0,
-        "lost": 0,
-        "points": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0
-      },
-      {
-        "position": 2,
-        "team": {
           "id": 9460,
           "name": "Curaçao",
           "shortName": "Curaçao",
@@ -375,13 +356,13 @@
         "goalDifference": 0
       },
       {
-        "position": 3,
+        "position": 1,
         "team": {
-          "id": 1935,
-          "name": "Ivory Coast",
-          "shortName": "Ivory Coast",
-          "tla": "CIV",
-          "crest": "https://crests.football-data.org/787.svg"
+          "id": 759,
+          "name": "Germany",
+          "shortName": "Germany",
+          "tla": "GER",
+          "crest": "https://crests.football-data.org/759.svg"
         },
         "playedGames": 0,
         "form": null,
@@ -394,13 +375,32 @@
         "goalDifference": 0
       },
       {
-        "position": 4,
+        "position": 1,
         "team": {
           "id": 791,
           "name": "Ecuador",
           "shortName": "Ecuador",
           "tla": "ECU",
           "crest": "https://crests.football-data.org/791.svg"
+        },
+        "playedGames": 0,
+        "form": null,
+        "won": 0,
+        "draw": 0,
+        "lost": 0,
+        "points": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0
+      },
+      {
+        "position": 1,
+        "team": {
+          "id": 1935,
+          "name": "Ivory Coast",
+          "shortName": "Ivory Coast",
+          "tla": "CIV",
+          "crest": "https://crests.football-data.org/787.svg"
         },
         "playedGames": 0,
         "form": null,
@@ -422,11 +422,11 @@
       {
         "position": 1,
         "team": {
-          "id": 792,
-          "name": "Sweden",
-          "shortName": "Sweden",
-          "tla": "SWE",
-          "crest": "https://crests.football-data.org/792.svg"
+          "id": 766,
+          "name": "Japan",
+          "shortName": "Japan",
+          "tla": "JPN",
+          "crest": "https://crests.football-data.org/766.svg"
         },
         "playedGames": 0,
         "form": null,
@@ -439,7 +439,7 @@
         "goalDifference": 0
       },
       {
-        "position": 2,
+        "position": 1,
         "team": {
           "id": 8601,
           "name": "Netherlands",
@@ -458,13 +458,13 @@
         "goalDifference": 0
       },
       {
-        "position": 3,
+        "position": 1,
         "team": {
-          "id": 766,
-          "name": "Japan",
-          "shortName": "Japan",
-          "tla": "JPN",
-          "crest": "https://crests.football-data.org/766.svg"
+          "id": 792,
+          "name": "Sweden",
+          "shortName": "Sweden",
+          "tla": "SWE",
+          "crest": "https://crests.football-data.org/792.svg"
         },
         "playedGames": 0,
         "form": null,
@@ -477,7 +477,7 @@
         "goalDifference": 0
       },
       {
-        "position": 4,
+        "position": 1,
         "team": {
           "id": 802,
           "name": "Tunisia",
@@ -505,25 +505,6 @@
       {
         "position": 1,
         "team": {
-          "id": 805,
-          "name": "Belgium",
-          "shortName": "Belgium",
-          "tla": "BEL",
-          "crest": "https://crests.football-data.org/805.svg"
-        },
-        "playedGames": 0,
-        "form": null,
-        "won": 0,
-        "draw": 0,
-        "lost": 0,
-        "points": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0
-      },
-      {
-        "position": 2,
-        "team": {
           "id": 825,
           "name": "Egypt",
           "shortName": "Egypt",
@@ -541,7 +522,26 @@
         "goalDifference": 0
       },
       {
-        "position": 3,
+        "position": 1,
+        "team": {
+          "id": 805,
+          "name": "Belgium",
+          "shortName": "Belgium",
+          "tla": "BEL",
+          "crest": "https://crests.football-data.org/805.svg"
+        },
+        "playedGames": 0,
+        "form": null,
+        "won": 0,
+        "draw": 0,
+        "lost": 0,
+        "points": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0
+      },
+      {
+        "position": 1,
         "team": {
           "id": 840,
           "name": "Iran",
@@ -560,7 +560,7 @@
         "goalDifference": 0
       },
       {
-        "position": 4,
+        "position": 1,
         "team": {
           "id": 783,
           "name": "New Zealand",
@@ -588,25 +588,6 @@
       {
         "position": 1,
         "team": {
-          "id": 760,
-          "name": "Spain",
-          "shortName": "Spain",
-          "tla": "ESP",
-          "crest": "https://crests.football-data.org/760.svg"
-        },
-        "playedGames": 0,
-        "form": null,
-        "won": 0,
-        "draw": 0,
-        "lost": 0,
-        "points": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0
-      },
-      {
-        "position": 2,
-        "team": {
           "id": 1930,
           "name": "Cape Verde Islands",
           "shortName": "Cape Verde",
@@ -624,7 +605,7 @@
         "goalDifference": 0
       },
       {
-        "position": 3,
+        "position": 1,
         "team": {
           "id": 801,
           "name": "Saudi Arabia",
@@ -643,7 +624,26 @@
         "goalDifference": 0
       },
       {
-        "position": 4,
+        "position": 1,
+        "team": {
+          "id": 760,
+          "name": "Spain",
+          "shortName": "Spain",
+          "tla": "ESP",
+          "crest": "https://crests.football-data.org/760.svg"
+        },
+        "playedGames": 0,
+        "form": null,
+        "won": 0,
+        "draw": 0,
+        "lost": 0,
+        "points": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0
+      },
+      {
+        "position": 1,
         "team": {
           "id": 758,
           "name": "Uruguay",
@@ -671,25 +671,6 @@
       {
         "position": 1,
         "team": {
-          "id": 8062,
-          "name": "Iraq",
-          "shortName": "Iraq",
-          "tla": "IRQ",
-          "crest": "https://crests.football-data.org/iraq.svg"
-        },
-        "playedGames": 0,
-        "form": null,
-        "won": 0,
-        "draw": 0,
-        "lost": 0,
-        "points": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0
-      },
-      {
-        "position": 2,
-        "team": {
           "id": 773,
           "name": "France",
           "shortName": "France",
@@ -707,13 +688,13 @@
         "goalDifference": 0
       },
       {
-        "position": 3,
+        "position": 1,
         "team": {
-          "id": 804,
-          "name": "Senegal",
-          "shortName": "Senegal",
-          "tla": "SEN",
-          "crest": "https://crests.football-data.org/senegal.svg"
+          "id": 8062,
+          "name": "Iraq",
+          "shortName": "Iraq",
+          "tla": "IRQ",
+          "crest": "https://crests.football-data.org/iraq.svg"
         },
         "playedGames": 0,
         "form": null,
@@ -726,13 +707,32 @@
         "goalDifference": 0
       },
       {
-        "position": 4,
+        "position": 1,
         "team": {
           "id": 8872,
           "name": "Norway",
           "shortName": "Norway",
           "tla": "NOR",
           "crest": "https://crests.football-data.org/813.svg"
+        },
+        "playedGames": 0,
+        "form": null,
+        "won": 0,
+        "draw": 0,
+        "lost": 0,
+        "points": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0
+      },
+      {
+        "position": 1,
+        "team": {
+          "id": 804,
+          "name": "Senegal",
+          "shortName": "Senegal",
+          "tla": "SEN",
+          "crest": "https://crests.football-data.org/senegal.svg"
         },
         "playedGames": 0,
         "form": null,
@@ -854,7 +854,26 @@
         "goalDifference": 0
       },
       {
-        "position": 2,
+        "position": 1,
+        "team": {
+          "id": 818,
+          "name": "Colombia",
+          "shortName": "Colombia",
+          "tla": "COL",
+          "crest": "https://crests.football-data.org/818.svg"
+        },
+        "playedGames": 0,
+        "form": null,
+        "won": 0,
+        "draw": 0,
+        "lost": 0,
+        "points": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0
+      },
+      {
+        "position": 1,
         "team": {
           "id": 765,
           "name": "Portugal",
@@ -873,32 +892,13 @@
         "goalDifference": 0
       },
       {
-        "position": 3,
+        "position": 1,
         "team": {
           "id": 8070,
           "name": "Uzbekistan",
           "shortName": "Uzbekistan",
           "tla": "UZB",
           "crest": "https://crests.football-data.org/8070.png"
-        },
-        "playedGames": 0,
-        "form": null,
-        "won": 0,
-        "draw": 0,
-        "lost": 0,
-        "points": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0
-      },
-      {
-        "position": 4,
-        "team": {
-          "id": 818,
-          "name": "Colombia",
-          "shortName": "Colombia",
-          "tla": "COL",
-          "crest": "https://crests.football-data.org/818.svg"
         },
         "playedGames": 0,
         "form": null,
@@ -937,26 +937,7 @@
         "goalDifference": 0
       },
       {
-        "position": 2,
-        "team": {
-          "id": 799,
-          "name": "Croatia",
-          "shortName": "Croatia",
-          "tla": "CRO",
-          "crest": "https://crests.football-data.org/799.svg"
-        },
-        "playedGames": 0,
-        "form": null,
-        "won": 0,
-        "draw": 0,
-        "lost": 0,
-        "points": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0
-      },
-      {
-        "position": 3,
+        "position": 1,
         "team": {
           "id": 763,
           "name": "Ghana",
@@ -975,7 +956,26 @@
         "goalDifference": 0
       },
       {
-        "position": 4,
+        "position": 1,
+        "team": {
+          "id": 799,
+          "name": "Croatia",
+          "shortName": "Croatia",
+          "tla": "CRO",
+          "crest": "https://crests.football-data.org/799.svg"
+        },
+        "playedGames": 0,
+        "form": null,
+        "won": 0,
+        "draw": 0,
+        "lost": 0,
+        "points": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0
+      },
+      {
+        "position": 1,
         "team": {
           "id": 1836,
           "name": "Panama",
