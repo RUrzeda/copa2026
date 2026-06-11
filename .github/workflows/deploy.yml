@@ -34,6 +34,7 @@ jobs:
         env:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
         run: node scripts/fetch-data.js
+        continue-on-error: true
 
       - name: Build
         env:
