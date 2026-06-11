@@ -1,6 +1,5 @@
 import { Target, Medal } from 'lucide-react'
 import { TeamFlag } from '../components/ui/TeamFlag'
-import { PlayerAvatar } from '../components/ui/PlayerAvatar'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { useData } from '../hooks/useData'
 import type { Scorer } from '../types'
@@ -31,12 +30,11 @@ function ScorerRow({ scorer, rank }: { scorer: Scorer; rank: number }) {
 
       {/* Player info */}
       <div className="flex items-center gap-3 flex-1 min-w-0">
-        <PlayerAvatar name={scorer.player.name} photo={scorer.player.photo} size="md" />
+        <TeamFlag crest={scorer.team.crest} name={scorer.team.name} size="md" className="flex-shrink-0" />
         <div className="min-w-0">
           <div className="font-semibold text-slate-100 text-base truncate">{scorer.player.name}</div>
           <div className="text-xs text-slate-500">{translateTeam(scorer.team.name)} · {translateNationality(scorer.player.nationality)}</div>
         </div>
-        <TeamFlag crest={scorer.team.crest} name={scorer.team.name} size="sm" className="flex-shrink-0 hidden sm:block" />
       </div>
 
       {/* Stats */}

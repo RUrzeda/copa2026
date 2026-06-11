@@ -1,7 +1,7 @@
 import { Target, ChevronRight } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import { Card, CardHeader } from '../ui/Card'
-import { PlayerAvatar } from '../ui/PlayerAvatar'
+import { TeamFlag } from '../ui/TeamFlag'
 import { SkeletonCard } from '../ui/LoadingSpinner'
 import { useData } from '../../hooks/useData'
 import { translateTeam } from '../../utils/helpers'
@@ -21,8 +21,8 @@ function ScorerRow({ scorer, rank }: { scorer: Scorer; rank: number }) {
         {rank}
       </div>
 
-      {/* Player avatar */}
-      <PlayerAvatar name={scorer.player.name} photo={scorer.player.photo} size="sm" />
+      {/* Team flag */}
+      <TeamFlag crest={scorer.team.crest} name={scorer.team.name} size="xs" className="flex-shrink-0" />
 
       {/* Player name */}
       <div className="flex-1 min-w-0">
