@@ -5,9 +5,11 @@ import type { Match } from '../../types'
 function buildMatchText(match: Match): string {
   const home = translateTeam(match.homeTeam.shortName)
   const away = translateTeam(match.awayTeam.shortName)
-  const { home: hg, away: ag } = match.score.fullTime
+  const ft = match.score.fullTime
+  const hg = ft?.home
+  const ag = ft?.away
 
-  if (hg !== null && ag !== null) {
+  if (hg !== null && hg !== undefined && ag !== null && ag !== undefined) {
     return `${home} ${hg} x ${ag} ${away} | Copa do Mundo 2026\nAcompanhe em paineldacopa.com.br`
   }
   return `${home} x ${away} | Copa do Mundo 2026\nAcompanhe ao vivo em paineldacopa.com.br`

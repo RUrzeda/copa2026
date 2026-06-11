@@ -46,8 +46,8 @@ function ScorerRow({ scorer, rank }: { scorer: Scorer; rank: number }) {
           <div className="text-xs text-slate-600 uppercase tracking-wider">gols</div>
         </div>
         <div className="text-center hidden sm:block">
-          <div className="font-semibold text-xl text-slate-300">{scorer.assists}</div>
-          <div className="text-xs text-slate-600 uppercase tracking-wider">assists</div>
+          <div className="font-semibold text-xl text-slate-300">{scorer.assists ?? 0}</div>
+          <div className="text-xs text-slate-600 uppercase tracking-wider">assist.</div>
         </div>
         <div className="text-center hidden md:block">
           <div className="font-semibold text-xl text-slate-400">{scorer.penalties ?? 0}</div>

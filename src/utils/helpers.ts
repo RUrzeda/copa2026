@@ -239,9 +239,9 @@ export function getGroupLabel(group: string | null): string {
 }
 
 export function formatScore(match: Match): string {
-  const { fullTime } = match.score
-  if (fullTime.home === null || fullTime.away === null) return '-'
-  return `${fullTime.home} - ${fullTime.away}`
+  const ft = match.score.fullTime
+  if (!ft || ft.home === null || ft.away === null) return '-'
+  return `${ft.home} - ${ft.away}`
 }
 
 export function getMatchResult(match: Match, teamId: number): 'win' | 'loss' | 'draw' | null {

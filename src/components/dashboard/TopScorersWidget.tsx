@@ -36,10 +36,10 @@ function ScorerRow({ scorer, rank }: { scorer: Scorer; rank: number }) {
           <div className="font-display font-bold text-lg text-white">{scorer.goals}</div>
           <div className="text-[10px] text-slate-600 uppercase tracking-wider">gols</div>
         </div>
-        {scorer.assists > 0 && (
+        {(scorer.assists ?? 0) > 0 && (
           <div className="text-center hidden sm:block">
             <div className="font-semibold text-sm text-slate-400">{scorer.assists}</div>
-            <div className="text-[10px] text-slate-600 uppercase tracking-wider">assists</div>
+            <div className="text-[10px] text-slate-600 uppercase tracking-wider">assist.</div>
           </div>
         )}
       </div>

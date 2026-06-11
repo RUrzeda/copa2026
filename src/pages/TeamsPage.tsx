@@ -16,12 +16,12 @@ function getTeamStats(teamId: number, matches: Match[]) {
   const draws = played.filter(m => getMatchResult(m, teamId) === 'draw').length
   const losses = played.filter(m => getMatchResult(m, teamId) === 'loss').length
   const goalsFor = played.reduce((acc, m) => {
-    if (m.homeTeam.id === teamId) return acc + (m.score.fullTime.home ?? 0)
-    return acc + (m.score.fullTime.away ?? 0)
+    if (m.homeTeam.id === teamId) return acc + (m.score.fullTime?.home ?? 0)
+    return acc + (m.score.fullTime?.away ?? 0)
   }, 0)
   const goalsAgainst = played.reduce((acc, m) => {
-    if (m.homeTeam.id === teamId) return acc + (m.score.fullTime.away ?? 0)
-    return acc + (m.score.fullTime.home ?? 0)
+    if (m.homeTeam.id === teamId) return acc + (m.score.fullTime?.away ?? 0)
+    return acc + (m.score.fullTime?.home ?? 0)
   }, 0)
   return { played: played.length, wins, draws, losses, goalsFor, goalsAgainst }
 }

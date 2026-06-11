@@ -80,7 +80,7 @@ function MatchCard({ match, width = COL_W }: { match: Match | null; width?: numb
     if (!match) return null
     const team  = side === 'home' ? match.homeTeam : match.awayTeam
     const won   = side === 'home' ? homeWon : awayWon
-    const score = side === 'home' ? match.score.fullTime.home : match.score.fullTime.away
+    const score = side === 'home' ? match.score.fullTime?.home : match.score.fullTime?.away
     return (
       <div
         className={`flex-1 flex items-center gap-2 px-2.5 ${

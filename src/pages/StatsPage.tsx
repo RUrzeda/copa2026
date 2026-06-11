@@ -39,7 +39,7 @@ export function StatsPage() {
 
   // Goals per match
   const totalGoals = finished.reduce((acc, m) =>
-    acc + (m.score.fullTime.home ?? 0) + (m.score.fullTime.away ?? 0), 0)
+    acc + (m.score.fullTime?.home ?? 0) + (m.score.fullTime?.away ?? 0), 0)
   const avgGoals = finished.length > 0 ? (totalGoals / finished.length).toFixed(2) : '0.00'
 
   // Results breakdown
@@ -51,7 +51,7 @@ export function StatsPage() {
   const goalsByGroup = (data?.standings ?? []).reduce((acc, group) => {
     const groupMatches = finished.filter(m => m.group === group.group)
     const goals = groupMatches.reduce((g, m) =>
-      g + (m.score.fullTime.home ?? 0) + (m.score.fullTime.away ?? 0), 0)
+      g + (m.score.fullTime?.home ?? 0) + (m.score.fullTime?.away ?? 0), 0)
     acc[group.group] = goals
     return acc
   }, {} as Record<string, number>)
@@ -61,8 +61,8 @@ export function StatsPage() {
   // Top scoring teams
   const teamGoals: Record<number, { name: string; crest: string; goals: number }> = {}
   finished.forEach(m => {
-    const hg = m.score.fullTime.home ?? 0
-    const ag = m.score.fullTime.away ?? 0
+    const hg = m.score.fullTime?.home ?? 0
+    const ag = m.score.fullTime?.away ?? 0
     if (!teamGoals[m.homeTeam.id]) teamGoals[m.homeTeam.id] = { name: m.homeTeam.shortName, crest: m.homeTeam.crest, goals: 0 }
     if (!teamGoals[m.awayTeam.id]) teamGoals[m.awayTeam.id] = { name: m.awayTeam.shortName, crest: m.awayTeam.crest, goals: 0 }
     teamGoals[m.homeTeam.id].goals += hg
@@ -93,7 +93,7 @@ export function StatsPage() {
               { icon: Swords, label: 'Jogos realizados', value: finished.length, color: 'text-gold-400' },
               { icon: Target, label: 'Total de gols', value: totalGoals, color: 'text-pitch-500' },
               { icon: TrendingUp, label: 'Média gols/jogo', value: avgGoals, color: 'text-blue-400' },
-              { icon: AlertTriangle, label: 'Jogos sem gols', value: finished.filter(m => (m.score.fullTime.home ?? 0) + (m.score.fullTime.away ?? 0) === 0).length, color: 'text-slate-400' },
+              { icon: AlertTriangle, label: 'Jogos sem gols', value: finished.filter(m => (m.score.fullTime?.home ?? 0) + (m.score.fullTime?.away ?? 0) === 0).length, color: 'text-slate-400' },
             ].map(({ icon: Icon, label, value, color }) => (
               <Card key={label}>
                 <div className={`mb-2 ${color}`}><Icon className="h-5 w-5" /></div>

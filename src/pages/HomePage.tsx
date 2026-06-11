@@ -1,5 +1,4 @@
 import { HeroBanner } from '../components/dashboard/HeroBanner'
-import { StatsBar } from '../components/dashboard/StatsBar'
 import { NextMatches } from '../components/dashboard/NextMatches'
 import { RecentResults } from '../components/dashboard/RecentResults'
 import { TopScorersWidget } from '../components/dashboard/TopScorersWidget'
@@ -16,7 +15,6 @@ export function HomePage() {
   return (
     <div className="space-y-6">
       <HeroBanner />
-      <StatsBar />
 
       {/* Ad: below hero / stats bar */}
       <AdLeaderboard slot={AD_SLOTS.belowHero} />
