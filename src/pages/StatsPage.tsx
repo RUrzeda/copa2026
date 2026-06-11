@@ -47,14 +47,14 @@ export function StatsPage() {
   const awayWins = finished.filter(m => m.score.winner === 'AWAY_TEAM').length
   const draws = finished.filter(m => m.score.winner === 'DRAW').length
 
-  // Goals by group
-  const goalsByGroup = (data?.standings ?? []).reduce((acc, group) => {
-    const groupMatches = finished.filter(m => m.group === group.group)
-    const goals = groupMatches.reduce((g, m) =>
-      g + (m.score.fullTime?.home ?? 0) + (m.score.fullTime?.away ?? 0), 0)
-    acc[group.group] = goals
-    return acc
-  }, {} as Record<string, number>)
+  // Goals by group — computed directly from matches (not dependent on standings)
+  const goalsByGroup: Record<string, number> = {}
+  finished.forEach(m => {
+    if (m.group) {
+      goalsByGroup[m.group] = (goalsByGroup[m.group] ?? 0)
+        + (m.score.fullTime?.home ?? 0) + (m.score.fullTime?.away ?? 0)
+    }
+  })
 
   const maxGroupGoals = Math.max(...Object.values(goalsByGroup), 1)
 
@@ -108,13 +108,13 @@ export function StatsPage() {
             <Card>
               <CardHeader title="Resultados" icon={<Swords className="h-4 w-4" />} />
               <div className="space-y-1">
-                <StatBar label="Mandante" value={homeWins} max={finished.length} color="bg-pitch-500" />
-                <StatBar label="Visitante" value={awayWins} max={finished.length} color="bg-blue-500" />
+                <StatBar label="1ª seleção" value={homeWins} max={finished.length} color="bg-pitch-500" />
+                <StatBar label="2ª seleção" value={awayWins} max={finished.length} color="bg-blue-500" />
                 <StatBar label="Empates" value={draws} max={finished.length} color="bg-amber-500" />
               </div>
               <div className="mt-4 flex items-center gap-4 text-xs text-slate-600">
-                <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-pitch-500" />{homeWins} vitórias do mandante</div>
-                <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-blue-500" />{awayWins} vitórias do visitante</div>
+                <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-pitch-500" />{homeWins} vitórias da 1ª</div>
+                <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-blue-500" />{awayWins} vitórias da 2ª</div>
                 <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-amber-500" />{draws} empates</div>
               </div>
             </Card>

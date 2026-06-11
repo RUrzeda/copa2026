@@ -83,6 +83,7 @@ export interface Scorer {
     nationality: string
     position: string
     shirtNumber: number | null
+    photo?: string | null
   }
   team: Team
   goals: number
