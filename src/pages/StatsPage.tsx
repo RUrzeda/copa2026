@@ -1,4 +1,4 @@
-import { BarChart2, TrendingUp, Swords, Target, AlertTriangle } from 'lucide-react'
+import { BarChart2, TrendingUp, Swords, Target, AlertTriangle, Handshake, Timer, Trophy, Shield } from 'lucide-react'
 import { Card, CardHeader } from '../components/ui/Card'
 import { TeamFlag } from '../components/ui/TeamFlag'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
@@ -42,10 +42,14 @@ export function StatsPage() {
     acc + (m.score.fullTime?.home ?? 0) + (m.score.fullTime?.away ?? 0), 0)
   const avgGoals = finished.length > 0 ? (totalGoals / finished.length).toFixed(2) : '0.00'
 
-  // Results breakdown
-  const homeWins = finished.filter(m => m.score.winner === 'HOME_TEAM').length
-  const awayWins = finished.filter(m => m.score.winner === 'AWAY_TEAM').length
-  const draws = finished.filter(m => m.score.winner === 'DRAW').length
+  // Destaques
+  const draws          = finished.filter(m => m.score.winner === 'DRAW').length
+  const extraTime      = finished.filter(m => m.score.duration === 'EXTRA_TIME').length
+  const penaltyDecided = finished.filter(m => m.score.duration === 'PENALTY_SHOOTOUT').length
+  const cleanSheets    = finished.filter(m =>
+    (m.score.fullTime?.home ?? 1) === 0 || (m.score.fullTime?.away ?? 1) === 0).length
+  const totalAssists   = (data?.scorers ?? []).reduce((acc, s) => acc + (s.assists ?? 0), 0)
+  const totalPenalties = (data?.scorers ?? []).reduce((acc, s) => acc + (s.penalties ?? 0), 0)
 
   // Goals by group — computed directly from matches (not dependent on standings)
   const goalsByGroup: Record<string, number> = {}
@@ -104,18 +108,26 @@ export function StatsPage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Results breakdown */}
+            {/* Destaques */}
             <Card>
-              <CardHeader title="Resultados" icon={<Swords className="h-4 w-4" />} />
-              <div className="space-y-1">
-                <StatBar label="1ª seleção" value={homeWins} max={finished.length} color="bg-pitch-500" />
-                <StatBar label="2ª seleção" value={awayWins} max={finished.length} color="bg-blue-500" />
-                <StatBar label="Empates" value={draws} max={finished.length} color="bg-amber-500" />
-              </div>
-              <div className="mt-4 flex items-center gap-4 text-xs text-slate-600">
-                <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-pitch-500" />{homeWins} vitórias da 1ª</div>
-                <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-blue-500" />{awayWins} vitórias da 2ª</div>
-                <div className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-amber-500" />{draws} empates</div>
+              <CardHeader title="Destaques" icon={<Trophy className="h-4 w-4" />} />
+              <div className="grid grid-cols-2 gap-3 mt-1">
+                {[
+                  { icon: Handshake,    label: 'Assistências',         value: totalAssists,   color: 'text-blue-400' },
+                  { icon: Target,       label: 'Pênaltis convertidos', value: totalPenalties, color: 'text-pitch-500' },
+                  { icon: Handshake,    label: 'Empates',              value: draws,          color: 'text-amber-400' },
+                  { icon: Shield,       label: 'Jogos sem sofrer gol', value: cleanSheets,    color: 'text-slate-300' },
+                  { icon: Timer,        label: 'Prorrogações',         value: extraTime,      color: 'text-purple-400' },
+                  { icon: Swords,       label: 'Decididos nos pên.',   value: penaltyDecided, color: 'text-red-400' },
+                ].map(({ icon: Icon, label, value, color }) => (
+                  <div key={label} className="flex items-center gap-2.5 p-2.5 rounded-lg bg-navy-800/40 border border-navy-700/50">
+                    <Icon className={`h-4 w-4 flex-shrink-0 ${color}`} />
+                    <div className="min-w-0">
+                      <div className={`font-display font-bold text-xl leading-none ${color}`}>{value}</div>
+                      <div className="text-[10px] text-slate-600 mt-0.5 leading-tight">{label}</div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </Card>
 
