@@ -2,9 +2,7 @@ name: Auto-update data
 
 on:
   schedule:
-    - cron: '*/5 * 11-30 6 *'   # a cada 5 min, dia todo, 11-30 de junho
-    - cron: '*/5 * 1-19 7 *'    # a cada 5 min, dia todo, 1-19 de julho
-    - cron: '0 * * * *'          # 1x/hora nos demais meses (fallback)
+    - cron: '0 * * * *'   # dispara 1x/hora — o job decide por quanto tempo loopa
   workflow_dispatch:
 
 concurrency:
@@ -18,6 +16,7 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 65
     steps:
       - uses: actions/checkout@v6
         with:
@@ -27,30 +26,56 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Fetch latest data
+      - name: Loop de atualização
         env:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
-        run: node scripts/fetch-data.js
-
-      - name: Commit & push if data changed
-        id: commit
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/
-          if git diff --staged --quiet; then
-            echo "Dados sem alteração, nenhum deploy necessário."
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            git commit -m "data: auto-update"
-            git push
-            echo "changed=true" >> $GITHUB_OUTPUT
+
+          HOUR=$(( 10#$(date -u +%H) ))
+          MONTH=$(( 10#$(date -u +%m) ))
+          DAY=$(( 10#$(date -u +%d) ))
+
+          # Período da Copa: 11 jun – 19 jul
+          COPA=false
+          if { [ $MONTH -eq 6 ] && [ $DAY -ge 11 ]; } || \
+             { [ $MONTH -eq 7 ] && [ $DAY -le 19 ]; }; then
+            COPA=true
           fi
 
-      - name: Disparar deploy
-        if: steps.commit.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh workflow run deploy.yml --ref main
-          echo "Deploy disparado com sucesso."
+          # Janela de jogos: 12h–04h UTC (cobre todas as janelas da Copa)
+          MATCH_HOURS=false
+          if [ "$COPA" = "true" ] && { [ $HOUR -ge 12 ] || [ $HOUR -le 4 ]; }; then
+            MATCH_HOURS=true
+          fi
+
+          if [ "$MATCH_HOURS" = "true" ]; then
+            LOOP_SECONDS=3300   # 55 min — termina antes do próximo trigger horário
+            INTERVAL=90         # checa a cada 90 segundos
+            echo "⚽ Modo ao vivo — loop de 55 min, intervalo 90s"
+          else
+            LOOP_SECONDS=0
+            INTERVAL=0
+            echo "💤 Modo normal — execução única"
+          fi
+
+          END=$(( $(date +%s) + LOOP_SECONDS ))
+
+          while true; do
+            node scripts/fetch-data.js
+
+            git add public/data/
+            if ! git diff --staged --quiet; then
+              git commit -m "data: live update"
+              git push
+              gh workflow run deploy.yml --ref main
+              echo "✅ Deploy disparado às $(date -u +%H:%M:%S) UTC"
+            else
+              echo "⏸  Sem alteração — $(date -u +%H:%M:%S) UTC"
+            fi
+
+            [ $(date +%s) -ge $END ] && break
+            sleep $INTERVAL
+          done
