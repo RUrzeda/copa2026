@@ -48,7 +48,8 @@ export function StatsPage() {
   const penaltyDecided = finished.filter(m => m.score.duration === 'PENALTY_SHOOTOUT').length
   const cleanSheets    = finished.filter(m =>
     (m.score.fullTime?.home ?? 1) === 0 || (m.score.fullTime?.away ?? 1) === 0).length
-  const totalAssists   = (data?.scorers ?? []).reduce((acc, s) => acc + (s.assists ?? 0), 0)
+  const highScoring    = finished.filter(m =>
+    (m.score.fullTime?.home ?? 0) + (m.score.fullTime?.away ?? 0) >= 3).length
   const totalPenalties = (data?.scorers ?? []).reduce((acc, s) => acc + (s.penalties ?? 0), 0)
 
   // Goals by group — computed directly from matches (not dependent on standings)
@@ -113,7 +114,7 @@ export function StatsPage() {
               <CardHeader title="Destaques" icon={<Trophy className="h-4 w-4" />} />
               <div className="grid grid-cols-2 gap-3 mt-1">
                 {[
-                  { icon: Handshake,    label: 'Assistências',         value: totalAssists,   color: 'text-blue-400' },
+                  { icon: TrendingUp,   label: 'Jogos com 3+ gols',    value: highScoring,    color: 'text-blue-400' },
                   { icon: Target,       label: 'Pênaltis convertidos', value: totalPenalties, color: 'text-pitch-500' },
                   { icon: Handshake,    label: 'Empates',              value: draws,          color: 'text-amber-400' },
                   { icon: Shield,       label: 'Jogos sem sofrer gol', value: cleanSheets,    color: 'text-slate-300' },
