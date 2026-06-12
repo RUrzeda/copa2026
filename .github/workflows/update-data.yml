@@ -2,19 +2,18 @@ name: Auto-update data
 
 on:
   schedule:
-    - cron: '*/5 14-23 11-30 6 *'
-    - cron: '*/5 0-3 11-30 6 *'
-    - cron: '*/5 14-23 1-19 7 *'
-    - cron: '*/5 0-3 1-19 7 *'
-    - cron: '0 * * * *'
+    - cron: '*/5 * 11-30 6 *'   # a cada 5 min, dia todo, 11-30 de junho
+    - cron: '*/5 * 1-19 7 *'    # a cada 5 min, dia todo, 1-19 de julho
+    - cron: '0 * * * *'          # 1x/hora nos demais meses (fallback)
   workflow_dispatch:
 
 concurrency:
   group: update-data
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   fetch:
@@ -34,13 +33,24 @@ jobs:
         run: node scripts/fetch-data.js
 
       - name: Commit & push if data changed
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/
           if git diff --staged --quiet; then
             echo "Dados sem alteração, nenhum deploy necessário."
+            echo "changed=false" >> $GITHUB_OUTPUT
           else
             git commit -m "data: auto-update"
             git push
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
+
+      - name: Disparar deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run deploy.yml --ref main
+          echo "Deploy disparado com sucesso."
