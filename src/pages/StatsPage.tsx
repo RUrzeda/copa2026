@@ -1,4 +1,4 @@
-import { BarChart2, TrendingUp, Swords, Target, AlertTriangle, Handshake, Timer, Trophy, Shield } from 'lucide-react'
+import { BarChart2, TrendingUp, Swords, Target, AlertTriangle, Handshake, Timer, Trophy, Flame } from 'lucide-react'
 import { Card, CardHeader } from '../components/ui/Card'
 import { TeamFlag } from '../components/ui/TeamFlag'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
@@ -46,8 +46,14 @@ export function StatsPage() {
   const draws          = finished.filter(m => m.score.winner === 'DRAW').length
   const extraTime      = finished.filter(m => m.score.duration === 'EXTRA_TIME').length
   const penaltyDecided = finished.filter(m => m.score.duration === 'PENALTY_SHOOTOUT').length
-  const cleanSheets    = finished.filter(m =>
-    (m.score.fullTime?.home ?? 1) === 0 || (m.score.fullTime?.away ?? 1) === 0).length
+  const comebacks      = finished.filter(m => {
+    const hh = m.score.halfTime?.home
+    const ah = m.score.halfTime?.away
+    if (hh == null || ah == null) return false
+    const hf = m.score.fullTime?.home ?? 0
+    const af = m.score.fullTime?.away ?? 0
+    return (hh > ah && hf <= af) || (ah > hh && af <= hf)
+  }).length
   const highScoring    = finished.filter(m =>
     (m.score.fullTime?.home ?? 0) + (m.score.fullTime?.away ?? 0) >= 3).length
   const totalPenalties = (data?.scorers ?? []).reduce((acc, s) => acc + (s.penalties ?? 0), 0)
@@ -117,7 +123,7 @@ export function StatsPage() {
                   { icon: TrendingUp,   label: 'Jogos com 3+ gols',    value: highScoring,    color: 'text-blue-400' },
                   { icon: Target,       label: 'Pênaltis convertidos', value: totalPenalties, color: 'text-pitch-500' },
                   { icon: Handshake,    label: 'Empates',              value: draws,          color: 'text-amber-400' },
-                  { icon: Shield,       label: 'Jogos sem sofrer gol', value: cleanSheets,    color: 'text-slate-300' },
+                  { icon: Flame,        label: 'Viradas',              value: comebacks,      color: 'text-orange-400' },
                   { icon: Timer,        label: 'Prorrogações',         value: extraTime,      color: 'text-purple-400' },
                   { icon: Swords,       label: 'Decididos nos pên.',   value: penaltyDecided, color: 'text-red-400' },
                 ].map(({ icon: Icon, label, value, color }) => (
