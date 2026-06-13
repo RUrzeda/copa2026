@@ -64,15 +64,19 @@ jobs:
 
           END=$(( $(date +%s) + LOOP_SECONDS ))
 
+          # Função: hash do conteúdo real, excluindo lastUpdated (campo ruidoso da API)
+          data_hash() {
+            for f in public/data/matches.json public/data/scorers.json public/data/standings.json; do
+              [ -f "$f" ] && jq 'walk(if type == "object" then del(.lastUpdated) else . end)' "$f"
+            done | md5sum
+          }
+
           while true; do
-            # Captura hash dos dados reais ANTES do fetch (ignora meta.json que muda sempre)
-            BEFORE=$(md5sum public/data/matches.json public/data/scorers.json \
-                           public/data/standings.json 2>/dev/null | md5sum)
+            BEFORE=$(data_hash)
 
             node scripts/fetch-data.js
 
-            AFTER=$(md5sum public/data/matches.json public/data/scorers.json \
-                          public/data/standings.json 2>/dev/null | md5sum)
+            AFTER=$(data_hash)
 
             if [ "$BEFORE" != "$AFTER" ]; then
               git add public/data/
