@@ -65,12 +65,18 @@ jobs:
           END=$(( $(date +%s) + LOOP_SECONDS ))
 
           while true; do
+            # Captura hash dos dados reais ANTES do fetch (ignora meta.json que muda sempre)
+            BEFORE=$(md5sum public/data/matches.json public/data/scorers.json \
+                           public/data/standings.json 2>/dev/null | md5sum)
+
             node scripts/fetch-data.js
 
-            git add public/data/
-            if ! git diff --staged --quiet; then
+            AFTER=$(md5sum public/data/matches.json public/data/scorers.json \
+                          public/data/standings.json 2>/dev/null | md5sum)
+
+            if [ "$BEFORE" != "$AFTER" ]; then
+              git add public/data/
               git commit -m "data: live update"
-              # push com retry em caso de conflito
               git push || (git pull --rebase && git push)
               gh workflow run deploy.yml --ref main
               echo "✅ Deploy disparado — $(date -u +'%H:%M:%S UTC')"
