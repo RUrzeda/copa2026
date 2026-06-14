@@ -550,11 +550,11 @@
     },
     "id": 537351,
     "utcDate": "2026-06-14T17:00:00Z",
-    "status": "PAUSED",
+    "status": "IN_PLAY",
     "matchday": 1,
     "stage": "GROUP_STAGE",
     "group": "GROUP_E",
-    "lastUpdated": "2026-06-14T18:01:53Z",
+    "lastUpdated": "2026-06-14T18:15:05Z",
     "homeTeam": {
       "id": 759,
       "name": "Germany",
@@ -573,7 +573,7 @@
       "winner": "HOME_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": 3,
+        "home": 4,
         "away": 1
       },
       "halfTime": {
