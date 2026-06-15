@@ -63,6 +63,37 @@
   },
   {
     "player": {
+      "id": 145613,
+      "name": "Yasin Ayari",
+      "firstName": "Yasin",
+      "lastName": "Ayari",
+      "dateOfBirth": "2003-10-06",
+      "nationality": "Sweden",
+      "section": "Midfield",
+      "position": null,
+      "shirtNumber": 26,
+      "lastUpdated": "2026-06-01T11:16:31Z"
+    },
+    "team": {
+      "id": 792,
+      "name": "Sweden",
+      "shortName": "Sweden",
+      "tla": "SWE",
+      "crest": "https://crests.football-data.org/792.svg",
+      "address": "Evenemangsgatan 31 / Box 1216 Solna 17123",
+      "website": "http://www.svenskfotboll.se",
+      "founded": 1904,
+      "clubColors": "Yellow / Blue",
+      "venue": null,
+      "lastUpdated": "2026-06-01T09:42:37Z"
+    },
+    "playedMatches": 1,
+    "goals": 2,
+    "assists": null,
+    "penalties": null
+  },
+  {
+    "player": {
       "id": 39237,
       "name": "Julián Quiñones",
       "firstName": "Julián",
@@ -894,6 +925,130 @@
       "lastUpdated": "2026-04-17T11:46:40Z"
     },
     "playedMatches": 0,
+    "goals": 1,
+    "assists": null,
+    "penalties": null
+  },
+  {
+    "player": {
+      "id": 6486,
+      "name": "Alexander Isak",
+      "firstName": "Alexander",
+      "lastName": "Isak",
+      "dateOfBirth": "1999-09-21",
+      "nationality": "Sweden",
+      "section": "Offence",
+      "position": null,
+      "shirtNumber": null,
+      "lastUpdated": "2026-06-01T11:16:31Z"
+    },
+    "team": {
+      "id": 792,
+      "name": "Sweden",
+      "shortName": "Sweden",
+      "tla": "SWE",
+      "crest": "https://crests.football-data.org/792.svg",
+      "address": "Evenemangsgatan 31 / Box 1216 Solna 17123",
+      "website": "http://www.svenskfotboll.se",
+      "founded": 1904,
+      "clubColors": "Yellow / Blue",
+      "venue": null,
+      "lastUpdated": "2026-06-01T09:42:37Z"
+    },
+    "playedMatches": 1,
+    "goals": 1,
+    "assists": 2,
+    "penalties": null
+  },
+  {
+    "player": {
+      "id": 144669,
+      "name": "Omar Rekik",
+      "firstName": "Omar",
+      "lastName": "Rekik",
+      "dateOfBirth": "2001-12-20",
+      "nationality": "Tunisia",
+      "section": "Defence",
+      "position": null,
+      "shirtNumber": 35,
+      "lastUpdated": "2024-04-03T09:50:17Z"
+    },
+    "team": {
+      "id": 802,
+      "name": "Tunisia",
+      "shortName": "Tunisia",
+      "tla": "TUN",
+      "crest": "https://crests.football-data.org/tunisia.svg",
+      "address": "Stade Annexe d'El Menzah Tunis 1003",
+      "website": "http://www.ftf.org.tn",
+      "founded": 1957,
+      "clubColors": "White / Red",
+      "venue": null,
+      "lastUpdated": "2022-04-02T10:41:55Z"
+    },
+    "playedMatches": 1,
+    "goals": 1,
+    "assists": null,
+    "penalties": null
+  },
+  {
+    "player": {
+      "id": 8279,
+      "name": "Viktor Gyökeres",
+      "firstName": "Viktor",
+      "lastName": "Gyökeres",
+      "dateOfBirth": "1998-06-04",
+      "nationality": "Sweden",
+      "section": "Offence",
+      "position": null,
+      "shirtNumber": 9,
+      "lastUpdated": "2026-06-01T11:16:31Z"
+    },
+    "team": {
+      "id": 792,
+      "name": "Sweden",
+      "shortName": "Sweden",
+      "tla": "SWE",
+      "crest": "https://crests.football-data.org/792.svg",
+      "address": "Evenemangsgatan 31 / Box 1216 Solna 17123",
+      "website": "http://www.svenskfotboll.se",
+      "founded": 1904,
+      "clubColors": "Yellow / Blue",
+      "venue": null,
+      "lastUpdated": "2026-06-01T09:42:37Z"
+    },
+    "playedMatches": 1,
+    "goals": 1,
+    "assists": 1,
+    "penalties": null
+  },
+  {
+    "player": {
+      "id": 15354,
+      "name": "Mattias Svanberg",
+      "firstName": "Mattias",
+      "lastName": "Svanberg",
+      "dateOfBirth": "1999-01-05",
+      "nationality": "Sweden",
+      "section": "Midfield",
+      "position": null,
+      "shirtNumber": null,
+      "lastUpdated": "2026-06-01T11:16:31Z"
+    },
+    "team": {
+      "id": 792,
+      "name": "Sweden",
+      "shortName": "Sweden",
+      "tla": "SWE",
+      "crest": "https://crests.football-data.org/792.svg",
+      "address": "Evenemangsgatan 31 / Box 1216 Solna 17123",
+      "website": "http://www.svenskfotboll.se",
+      "founded": 1904,
+      "clubColors": "Yellow / Blue",
+      "venue": null,
+      "lastUpdated": "2026-06-01T09:42:37Z"
+    },
+    "playedMatches": 1,
     "goals": 1,
     "assists": null,
     "penalties": null
