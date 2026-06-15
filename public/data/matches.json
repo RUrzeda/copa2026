@@ -818,7 +818,7 @@
     "matchday": 1,
     "stage": "GROUP_STAGE",
     "group": "GROUP_H",
-    "lastUpdated": "2026-06-15T16:52:34Z",
+    "lastUpdated": "2026-06-15T16:57:22Z",
     "homeTeam": {
       "id": 760,
       "name": "Spain",
@@ -914,7 +914,14 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": []
+    "referees": [
+      {
+        "id": 18754,
+        "name": "Ramon Abatti Abel",
+        "type": "REFEREE",
+        "nationality": "Brazil"
+      }
+    ]
   },
   {
     "area": {
