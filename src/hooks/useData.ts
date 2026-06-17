@@ -15,7 +15,9 @@ function initEntry(team: Team): StandingEntry {
 
 // Computes group standings directly from match results.
 // Always consistent with match data — avoids lag from the standings API endpoint.
-function computeStandings(matches: Match[]): GroupStanding[] {
+// apiPositions used as final tiebreaker (FIFA criteria: cards, head-to-head, etc.)
+// since the API already computes those correctly.
+function computeStandings(matches: Match[], apiPositions: Map<number, number>): GroupStanding[] {
   const groups: Record<string, Record<number, StandingEntry>> = {}
 
   for (const m of matches) {
@@ -55,7 +57,7 @@ function computeStandings(matches: Match[]): GroupStanding[] {
           b.points - a.points ||
           b.goalDifference - a.goalDifference ||
           b.goalsFor - a.goalsFor ||
-          a.team.name.localeCompare(b.team.name)
+          (apiPositions.get(a.team.id) ?? 999) - (apiPositions.get(b.team.id) ?? 999)
         )
         .map((e, i) => ({ ...e, position: i + 1 })),
     }))
@@ -80,9 +82,17 @@ export function useData() {
         lastFetch: new Date().toISOString(),
       }))
 
+      // Build API position map for tiebreaker (cards, head-to-head — criteria we can't compute locally).
+      const apiPositions = new Map<number, number>()
+      for (const group of apiStandings) {
+        for (const entry of group.table) {
+          apiPositions.set(entry.team.id, entry.position)
+        }
+      }
+
       // Prefer computed standings (always in sync with match data).
       // Fall back to API standings only when no group matches are loaded yet.
-      const computed = computeStandings(matches)
+      const computed = computeStandings(matches, apiPositions)
       const standings = computed.length > 0 ? computed : apiStandings
 
       setData({ competition, standings, matches, scorers, lastFetch: meta.lastFetch })

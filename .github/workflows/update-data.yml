@@ -54,8 +54,8 @@ jobs:
           if [ "$MATCH_HOURS" = "true" ]; then
             # 5h50min — termina antes do timeout de 6h, deixando margem para auto-trigger
             LOOP_SECONDS=21000
-            INTERVAL=90
-            echo "⚽ Modo ao vivo — loop de 5h50min, checando a cada 90s"
+            INTERVAL=45
+            echo "⚽ Modo ao vivo — loop de 5h50min, checando a cada 45s"
           else
             LOOP_SECONDS=0
             INTERVAL=0
