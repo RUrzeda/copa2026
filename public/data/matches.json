@@ -1640,7 +1640,14 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": []
+    "referees": [
+      {
+        "id": 212450,
+        "name": "Tori Penso",
+        "type": "REFEREE",
+        "nationality": "USA"
+      }
+    ]
   },
   {
     "area": {
