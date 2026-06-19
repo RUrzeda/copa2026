@@ -1742,7 +1742,7 @@
     "matchday": 2,
     "stage": "GROUP_STAGE",
     "group": "GROUP_B",
-    "lastUpdated": "2026-06-18T23:59:30Z",
+    "lastUpdated": "2026-06-19T00:01:16Z",
     "homeTeam": {
       "id": 828,
       "name": "Canada",
@@ -1761,7 +1761,7 @@
       "winner": "HOME_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": 5,
+        "home": 6,
         "away": 0
       },
       "halfTime": {
