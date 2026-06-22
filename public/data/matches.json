@@ -2530,11 +2530,11 @@
     },
     "id": 537372,
     "utcDate": "2026-06-21T22:00:00Z",
-    "status": "IN_PLAY",
+    "status": "FINISHED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
     "group": "GROUP_H",
-    "lastUpdated": "2026-06-22T00:10:04Z",
+    "lastUpdated": "2026-06-22T00:10:40Z",
     "homeTeam": {
       "id": 758,
       "name": "Uruguay",
