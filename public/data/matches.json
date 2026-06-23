@@ -2794,11 +2794,11 @@
     },
     "id": 537394,
     "utcDate": "2026-06-23T00:00:00Z",
-    "status": "PAUSED",
+    "status": "FINISHED",
     "matchday": 2,
     "stage": "GROUP_STAGE",
     "group": "GROUP_I",
-    "lastUpdated": "2026-06-23T02:05:23Z",
+    "lastUpdated": "2026-06-23T02:06:01Z",
     "homeTeam": {
       "id": 8872,
       "name": "Norway",
