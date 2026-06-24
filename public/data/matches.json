@@ -3176,11 +3176,11 @@
     },
     "id": 537337,
     "utcDate": "2026-06-24T19:00:00Z",
-    "status": "PAUSED",
+    "status": "LIVE",
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_B",
-    "lastUpdated": "2026-06-24T19:55:14Z",
+    "lastUpdated": "2026-06-24T20:09:18Z",
     "homeTeam": {
       "id": 788,
       "name": "Switzerland",
