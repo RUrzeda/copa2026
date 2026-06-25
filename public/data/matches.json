@@ -3440,11 +3440,11 @@
     },
     "id": 537331,
     "utcDate": "2026-06-25T01:00:00Z",
-    "status": "IN_PLAY",
+    "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_A",
-    "lastUpdated": "2026-06-25T01:47:33Z",
+    "lastUpdated": "2026-06-25T01:48:40Z",
     "homeTeam": {
       "id": 798,
       "name": "Czechia",
@@ -3460,11 +3460,11 @@
       "crest": "https://crests.football-data.org/769.svg"
     },
     "score": {
-      "winner": "DRAW",
+      "winner": null,
       "duration": "REGULAR",
       "fullTime": {
-        "home": 0,
-        "away": 0
+        "home": null,
+        "away": null
       },
       "halfTime": {
         "home": null,
@@ -3506,11 +3506,11 @@
     },
     "id": 537332,
     "utcDate": "2026-06-25T01:00:00Z",
-    "status": "IN_PLAY",
+    "status": "TIMED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_A",
-    "lastUpdated": "2026-06-25T01:47:43Z",
+    "lastUpdated": "2026-06-25T01:48:28Z",
     "homeTeam": {
       "id": 774,
       "name": "South Africa",
@@ -3526,11 +3526,11 @@
       "crest": "https://crests.football-data.org/772.png"
     },
     "score": {
-      "winner": "DRAW",
+      "winner": null,
       "duration": "REGULAR",
       "fullTime": {
-        "home": 0,
-        "away": 0
+        "home": null,
+        "away": null
       },
       "halfTime": {
         "home": null,
