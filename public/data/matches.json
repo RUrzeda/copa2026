@@ -3738,7 +3738,14 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": []
+    "referees": [
+      {
+        "id": 212546,
+        "name": "Katia García",
+        "type": "REFEREE",
+        "nationality": "Mexico"
+      }
+    ]
   },
   {
     "area": {
@@ -3797,7 +3804,14 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": []
+    "referees": [
+      {
+        "id": 190010,
+        "name": "Ivan Barton",
+        "type": "REFEREE",
+        "nationality": null
+      }
+    ]
   },
   {
     "area": {
