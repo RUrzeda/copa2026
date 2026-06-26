@@ -4034,11 +4034,11 @@
     },
     "id": 537396,
     "utcDate": "2026-06-26T19:00:00Z",
-    "status": "IN_PLAY",
+    "status": "FINISHED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_I",
-    "lastUpdated": "2026-06-26T21:06:58Z",
+    "lastUpdated": "2026-06-26T21:09:19Z",
     "homeTeam": {
       "id": 804,
       "name": "Senegal",
