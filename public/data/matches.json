@@ -4232,11 +4232,11 @@
     },
     "id": 537367,
     "utcDate": "2026-06-27T03:00:00Z",
-    "status": "TIMED",
+    "status": "LIVE",
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_G",
-    "lastUpdated": "2026-06-26T07:48:25Z",
+    "lastUpdated": "2026-06-27T03:06:27Z",
     "homeTeam": {
       "id": 783,
       "name": "New Zealand",
@@ -4252,11 +4252,11 @@
       "crest": "https://crests.football-data.org/805.svg"
     },
     "score": {
-      "winner": null,
+      "winner": "DRAW",
       "duration": "REGULAR",
       "fullTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "halfTime": {
         "home": null,
@@ -4298,11 +4298,11 @@
     },
     "id": 537368,
     "utcDate": "2026-06-27T03:00:00Z",
-    "status": "TIMED",
+    "status": "IN_PLAY",
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_G",
-    "lastUpdated": "2026-06-26T07:48:25Z",
+    "lastUpdated": "2026-06-27T03:06:05Z",
     "homeTeam": {
       "id": 825,
       "name": "Egypt",
@@ -4318,11 +4318,11 @@
       "crest": "https://crests.football-data.org/iran.svg"
     },
     "score": {
-      "winner": null,
+      "winner": "DRAW",
       "duration": "REGULAR",
       "fullTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "halfTime": {
         "home": null,
