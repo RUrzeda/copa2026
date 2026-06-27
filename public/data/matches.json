@@ -3968,11 +3968,11 @@
     },
     "id": 537395,
     "utcDate": "2026-06-26T19:00:00Z",
-    "status": "TIMED",
+    "status": "FINISHED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_I",
-    "lastUpdated": "2026-06-26T07:48:25Z",
+    "lastUpdated": "2026-06-26T21:05:47Z",
     "homeTeam": {
       "id": 8872,
       "name": "Norway",
@@ -3988,15 +3988,15 @@
       "crest": "https://crests.football-data.org/773.svg"
     },
     "score": {
-      "winner": null,
+      "winner": "AWAY_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 4
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 3
       }
     },
     "odds": {
@@ -4034,11 +4034,11 @@
     },
     "id": 537396,
     "utcDate": "2026-06-26T19:00:00Z",
-    "status": "TIMED",
+    "status": "FINISHED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_I",
-    "lastUpdated": "2026-06-26T07:48:25Z",
+    "lastUpdated": "2026-06-26T21:10:58Z",
     "homeTeam": {
       "id": 804,
       "name": "Senegal",
@@ -4054,15 +4054,15 @@
       "crest": "https://crests.football-data.org/iraq.svg"
     },
     "score": {
-      "winner": null,
+      "winner": "HOME_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": null,
-        "away": null
+        "home": 5,
+        "away": 0
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       }
     },
     "odds": {
@@ -4104,7 +4104,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_H",
-    "lastUpdated": "2026-06-27T02:14:31Z",
+    "lastUpdated": "2026-06-27T02:07:59Z",
     "homeTeam": {
       "id": 758,
       "name": "Uruguay",
