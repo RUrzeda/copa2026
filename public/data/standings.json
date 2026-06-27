@@ -951,8 +951,8 @@
         "draw": 0,
         "lost": 1,
         "points": 6,
-        "goalsFor": 4,
-        "goalsAgainst": 4,
+        "goalsFor": 5,
+        "goalsAgainst": 5,
         "goalDifference": 0
       },
       {
@@ -970,8 +970,8 @@
         "draw": 1,
         "lost": 1,
         "points": 4,
-        "goalsFor": 1,
-        "goalsAgainst": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
         "goalDifference": 0
       },
       {
