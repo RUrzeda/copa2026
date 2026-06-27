@@ -4100,11 +4100,11 @@
     },
     "id": 537373,
     "utcDate": "2026-06-27T00:00:00Z",
-    "status": "LIVE",
+    "status": "PAUSED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_H",
-    "lastUpdated": "2026-06-27T00:57:29Z",
+    "lastUpdated": "2026-06-27T00:59:41Z",
     "homeTeam": {
       "id": 758,
       "name": "Uruguay",
@@ -4127,8 +4127,8 @@
         "away": 1
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       }
     },
     "odds": {
@@ -4170,7 +4170,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_H",
-    "lastUpdated": "2026-06-27T00:58:12Z",
+    "lastUpdated": "2026-06-27T00:59:23Z",
     "homeTeam": {
       "id": 1930,
       "name": "Cape Verde Islands",
@@ -4266,7 +4266,14 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": []
+    "referees": [
+      {
+        "id": 129250,
+        "name": "Adham Makhadmeh",
+        "type": "REFEREE",
+        "nationality": "Jordan"
+      }
+    ]
   },
   {
     "area": {
@@ -4325,7 +4332,14 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": []
+    "referees": [
+      {
+        "id": 43888,
+        "name": "Szymon Marciniak",
+        "type": "REFEREE",
+        "nationality": "Poland"
+      }
+    ]
   },
   {
     "area": {
