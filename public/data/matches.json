@@ -3576,7 +3576,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_E",
-    "lastUpdated": "2026-06-26T10:54:12Z",
+    "lastUpdated": "2026-06-26T07:48:25Z",
     "homeTeam": {
       "id": 791,
       "name": "Ecuador",
@@ -3642,7 +3642,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_E",
-    "lastUpdated": "2026-06-26T10:54:12Z",
+    "lastUpdated": "2026-06-26T07:48:25Z",
     "homeTeam": {
       "id": 9460,
       "name": "Curaçao",
@@ -3708,7 +3708,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_F",
-    "lastUpdated": "2026-06-26T10:54:16Z",
+    "lastUpdated": "2026-06-26T07:48:25Z",
     "homeTeam": {
       "id": 802,
       "name": "Tunisia",
@@ -3774,7 +3774,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_F",
-    "lastUpdated": "2026-06-26T10:54:16Z",
+    "lastUpdated": "2026-06-26T07:48:25Z",
     "homeTeam": {
       "id": 766,
       "name": "Japan",
@@ -3840,7 +3840,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_D",
-    "lastUpdated": "2026-06-26T10:54:20Z",
+    "lastUpdated": "2026-06-26T07:48:25Z",
     "homeTeam": {
       "id": 803,
       "name": "Turkey",
@@ -3906,7 +3906,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_D",
-    "lastUpdated": "2026-06-26T10:54:19Z",
+    "lastUpdated": "2026-06-26T07:48:25Z",
     "homeTeam": {
       "id": 761,
       "name": "Paraguay",
@@ -4104,7 +4104,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_H",
-    "lastUpdated": "2026-06-27T02:03:35Z",
+    "lastUpdated": "2026-06-27T02:04:22Z",
     "homeTeam": {
       "id": 758,
       "name": "Uruguay",
@@ -4166,11 +4166,11 @@
     },
     "id": 537374,
     "utcDate": "2026-06-27T00:00:00Z",
-    "status": "IN_PLAY",
+    "status": "FINISHED",
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_H",
-    "lastUpdated": "2026-06-27T02:03:34Z",
+    "lastUpdated": "2026-06-27T02:04:26Z",
     "homeTeam": {
       "id": 1930,
       "name": "Cape Verde Islands",
