@@ -4368,7 +4368,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_L",
-    "lastUpdated": "2026-06-27T22:11:01Z",
+    "lastUpdated": "2026-06-27T22:11:45Z",
     "homeTeam": {
       "id": 1836,
       "name": "Panama",
@@ -4430,11 +4430,11 @@
     },
     "id": 537414,
     "utcDate": "2026-06-27T21:00:00Z",
-    "status": "PAUSED",
+    "status": "LIVE",
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_L",
-    "lastUpdated": "2026-06-27T21:55:27Z",
+    "lastUpdated": "2026-06-27T22:11:30Z",
     "homeTeam": {
       "id": 799,
       "name": "Croatia",
