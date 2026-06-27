@@ -4236,7 +4236,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_G",
-    "lastUpdated": "2026-06-27T04:14:36Z",
+    "lastUpdated": "2026-06-27T04:16:17Z",
     "homeTeam": {
       "id": 783,
       "name": "New Zealand",
@@ -4298,11 +4298,11 @@
     },
     "id": 537368,
     "utcDate": "2026-06-27T03:00:00Z",
-    "status": "LIVE",
+    "status": "IN_PLAY",
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_G",
-    "lastUpdated": "2026-06-27T04:14:22Z",
+    "lastUpdated": "2026-06-27T04:16:17Z",
     "homeTeam": {
       "id": 825,
       "name": "Egypt",
