@@ -4764,7 +4764,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-06-28T20:33:14Z",
+    "lastUpdated": "2026-06-28T20:56:52Z",
     "homeTeam": {
       "id": 774,
       "name": "South Africa",
@@ -4780,11 +4780,11 @@
       "crest": "https://crests.football-data.org/canada.svg"
     },
     "score": {
-      "winner": "DRAW",
+      "winner": "AWAY_TEAM",
       "duration": "REGULAR",
       "fullTime": {
         "home": 0,
-        "away": 0
+        "away": 1
       },
       "halfTime": {
         "home": 0,
