@@ -4632,7 +4632,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_J",
-    "lastUpdated": "2026-06-28T02:33:41Z",
+    "lastUpdated": "2026-06-28T02:36:41Z",
     "homeTeam": {
       "id": 8049,
       "name": "Jordan",
@@ -4652,7 +4652,7 @@
       "duration": "REGULAR",
       "fullTime": {
         "home": 0,
-        "away": 1
+        "away": 2
       },
       "halfTime": {
         "home": null,
@@ -4698,7 +4698,7 @@
     "matchday": 3,
     "stage": "GROUP_STAGE",
     "group": "GROUP_J",
-    "lastUpdated": "2026-06-28T02:33:44Z",
+    "lastUpdated": "2026-06-28T02:36:44Z",
     "homeTeam": {
       "id": 778,
       "name": "Algeria",
