@@ -760,12 +760,12 @@
           "tla": "ARG",
           "crest": "https://crests.football-data.org/762.png"
         },
-        "playedGames": 2,
+        "playedGames": 3,
         "form": null,
         "won": 2,
-        "draw": 0,
+        "draw": 1,
         "lost": 0,
-        "points": 6,
+        "points": 7,
         "goalsFor": 5,
         "goalsAgainst": 0,
         "goalDifference": 5
@@ -779,12 +779,12 @@
           "tla": "AUT",
           "crest": "https://crests.football-data.org/816.svg"
         },
-        "playedGames": 2,
+        "playedGames": 3,
         "form": null,
         "won": 1,
-        "draw": 0,
+        "draw": 1,
         "lost": 1,
-        "points": 3,
+        "points": 4,
         "goalsFor": 3,
         "goalsAgainst": 3,
         "goalDifference": 0
@@ -798,12 +798,12 @@
           "tla": "ALG",
           "crest": "https://crests.football-data.org/algeria.svg"
         },
-        "playedGames": 2,
+        "playedGames": 3,
         "form": null,
         "won": 1,
-        "draw": 0,
+        "draw": 1,
         "lost": 1,
-        "points": 3,
+        "points": 4,
         "goalsFor": 2,
         "goalsAgainst": 4,
         "goalDifference": -2
@@ -817,12 +817,12 @@
           "tla": "JOR",
           "crest": "https://crests.football-data.org/8049.png"
         },
-        "playedGames": 2,
+        "playedGames": 3,
         "form": null,
         "won": 0,
-        "draw": 0,
+        "draw": 1,
         "lost": 2,
-        "points": 0,
+        "points": 1,
         "goalsFor": 2,
         "goalsAgainst": 5,
         "goalDifference": -3
