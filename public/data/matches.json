@@ -4892,11 +4892,11 @@
     },
     "id": 537415,
     "utcDate": "2026-06-29T20:30:00Z",
-    "status": "IN_PLAY",
+    "status": "PAUSED",
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-06-29T21:52:45Z",
+    "lastUpdated": "2026-06-29T22:33:35Z",
     "homeTeam": {
       "id": 759,
       "name": "Germany",
