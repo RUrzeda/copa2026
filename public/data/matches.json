@@ -5052,7 +5052,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-06-30T18:46:39Z",
+    "lastUpdated": "2026-06-30T18:51:07Z",
     "homeTeam": {
       "id": 1935,
       "name": "Ivory Coast",
@@ -5068,11 +5068,11 @@
       "crest": "https://crests.football-data.org/813.svg"
     },
     "score": {
-      "winner": "DRAW",
+      "winner": "AWAY_TEAM",
       "duration": "REGULAR",
       "fullTime": {
         "home": 1,
-        "away": 1
+        "away": 2
       },
       "halfTime": {
         "home": 0,
