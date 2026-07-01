@@ -5052,7 +5052,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-06-30T19:12:59Z",
+    "lastUpdated": "2026-06-30T19:04:39Z",
     "homeTeam": {
       "id": 1935,
       "name": "Ivory Coast",
@@ -5180,11 +5180,11 @@
     },
     "id": 537425,
     "utcDate": "2026-07-01T01:00:00Z",
-    "status": "IN_PLAY",
+    "status": "FINISHED",
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-01T04:05:25Z",
+    "lastUpdated": "2026-07-01T04:07:01Z",
     "homeTeam": {
       "id": 769,
       "name": "Mexico",
