@@ -5316,7 +5316,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-01T21:56:28Z",
+    "lastUpdated": "2026-07-01T22:00:27Z",
     "homeTeam": {
       "id": 805,
       "name": "Belgium",
@@ -5412,7 +5412,14 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": []
+    "referees": [
+      {
+        "id": 11260,
+        "name": "Raphael Claus",
+        "type": "REFEREE",
+        "nationality": "Brazil"
+      }
+    ]
   },
   {
     "area": {
