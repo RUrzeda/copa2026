@@ -5082,14 +5082,7 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": [
-      {
-        "id": 28805,
-        "name": "Jesús Valenzuela",
-        "type": "REFEREE",
-        "nationality": "Venezuela"
-      }
-    ]
+    "referees": []
   },
   {
     "area": {
@@ -5148,14 +5141,7 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": [
-      {
-        "id": 43899,
-        "name": "Danny Makkelie",
-        "type": "REFEREE",
-        "nationality": "Netherlands"
-      }
-    ]
+    "referees": []
   },
   {
     "area": {
@@ -5214,14 +5200,7 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": [
-      {
-        "id": 9351,
-        "name": "Slavko Vinčič",
-        "type": "REFEREE",
-        "nationality": "Slovenia"
-      }
-    ]
+    "referees": []
   },
   {
     "area": {
@@ -5280,14 +5259,7 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": [
-      {
-        "id": 129250,
-        "name": "Adham Makhadmeh",
-        "type": "REFEREE",
-        "nationality": "Jordan"
-      }
-    ]
+    "referees": []
   },
   {
     "area": {
