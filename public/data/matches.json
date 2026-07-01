@@ -5052,7 +5052,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-06-30T19:12:59Z",
+    "lastUpdated": "2026-06-30T19:04:39Z",
     "homeTeam": {
       "id": 1935,
       "name": "Ivory Coast",
@@ -5184,7 +5184,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-01T02:33:49Z",
+    "lastUpdated": "2026-07-01T02:36:49Z",
     "homeTeam": {
       "id": 769,
       "name": "Mexico",
@@ -5203,7 +5203,7 @@
       "winner": "HOME_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": 1,
+        "home": 2,
         "away": 0
       },
       "halfTime": {
