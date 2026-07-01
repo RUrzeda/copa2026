@@ -5184,7 +5184,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-01T02:24:49Z",
+    "lastUpdated": "2026-07-01T02:27:24Z",
     "homeTeam": {
       "id": 769,
       "name": "Mexico",
@@ -5200,10 +5200,10 @@
       "crest": "https://crests.football-data.org/791.svg"
     },
     "score": {
-      "winner": "DRAW",
+      "winner": "HOME_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": 0,
+        "home": 1,
         "away": 0
       },
       "halfTime": {
