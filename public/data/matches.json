@@ -5180,11 +5180,11 @@
     },
     "id": 537425,
     "utcDate": "2026-07-01T01:00:00Z",
-    "status": "LIVE",
+    "status": "PAUSED",
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-01T02:48:49Z",
+    "lastUpdated": "2026-07-01T02:56:48Z",
     "homeTeam": {
       "id": 769,
       "name": "Mexico",
@@ -5207,8 +5207,8 @@
         "away": 0
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       }
     },
     "odds": {
