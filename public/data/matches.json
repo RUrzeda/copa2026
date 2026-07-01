@@ -5052,7 +5052,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-01T08:25:00Z",
+    "lastUpdated": "2026-07-01T08:25:01Z",
     "homeTeam": {
       "id": 1935,
       "name": "Ivory Coast",
@@ -5316,7 +5316,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-01T21:52:03Z",
+    "lastUpdated": "2026-07-01T21:53:51Z",
     "homeTeam": {
       "id": 805,
       "name": "Belgium",
@@ -5335,7 +5335,7 @@
       "winner": "AWAY_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": 0,
+        "home": 1,
         "away": 2
       },
       "halfTime": {
