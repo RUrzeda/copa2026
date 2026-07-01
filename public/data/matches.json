@@ -5250,7 +5250,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-01T16:05:30Z",
+    "lastUpdated": "2026-07-01T16:12:21Z",
     "homeTeam": {
       "id": 770,
       "name": "England",
@@ -5266,11 +5266,11 @@
       "crest": "https://crests.football-data.org/congo_dr.svg"
     },
     "score": {
-      "winner": "DRAW",
+      "winner": "AWAY_TEAM",
       "duration": "REGULAR",
       "fullTime": {
         "home": 0,
-        "away": 0
+        "away": 1
       },
       "halfTime": {
         "home": null,
