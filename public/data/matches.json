@@ -5180,11 +5180,11 @@
     },
     "id": 537425,
     "utcDate": "2026-07-01T01:00:00Z",
-    "status": "LIVE",
+    "status": "IN_PLAY",
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-01T03:12:33Z",
+    "lastUpdated": "2026-07-01T03:13:36Z",
     "homeTeam": {
       "id": 769,
       "name": "Mexico",
