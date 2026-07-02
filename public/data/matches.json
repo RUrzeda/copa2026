@@ -5456,7 +5456,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-02T20:15:07Z",
+    "lastUpdated": "2026-07-02T20:32:51Z",
     "homeTeam": {
       "id": 760,
       "name": "Spain",
@@ -5475,7 +5475,7 @@
       "winner": "HOME_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": 1,
+        "home": 2,
         "away": 0
       },
       "halfTime": {
