@@ -5456,7 +5456,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-02T19:37:11Z",
+    "lastUpdated": "2026-07-02T19:41:33Z",
     "homeTeam": {
       "id": 760,
       "name": "Spain",
@@ -5472,11 +5472,11 @@
       "crest": "https://crests.football-data.org/816.svg"
     },
     "score": {
-      "winner": null,
+      "winner": "HOME_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "halfTime": {
         "home": null,
