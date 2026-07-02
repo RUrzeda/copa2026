@@ -5316,7 +5316,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-01T23:03:12Z",
+    "lastUpdated": "2026-07-01T23:03:13Z",
     "homeTeam": {
       "id": 805,
       "name": "Belgium",
@@ -5390,7 +5390,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-02T00:49:44Z",
+    "lastUpdated": "2026-07-02T00:51:09Z",
     "homeTeam": {
       "id": 771,
       "name": "United States",
@@ -5413,8 +5413,8 @@
         "away": 0
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       }
     },
     "odds": {
