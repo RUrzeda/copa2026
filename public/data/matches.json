@@ -5456,7 +5456,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-02T20:55:41Z",
+    "lastUpdated": "2026-07-02T20:59:07Z",
     "homeTeam": {
       "id": 760,
       "name": "Spain",
@@ -5552,7 +5552,14 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": []
+    "referees": [
+      {
+        "id": 215543,
+        "name": "Espen Eskås",
+        "type": "REFEREE",
+        "nationality": "Norway"
+      }
+    ]
   },
   {
     "area": {
