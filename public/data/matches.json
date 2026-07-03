@@ -5522,7 +5522,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-03T00:58:39Z",
+    "lastUpdated": "2026-07-03T01:00:27Z",
     "homeTeam": {
       "id": 765,
       "name": "Portugal",
@@ -5618,7 +5618,14 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": []
+    "referees": [
+      {
+        "id": 57435,
+        "name": "Yael Falcón",
+        "type": "REFEREE",
+        "nationality": "Argentina"
+      }
+    ]
   },
   {
     "area": {
