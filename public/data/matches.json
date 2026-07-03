@@ -5522,7 +5522,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-03T01:26:11Z",
+    "lastUpdated": "2026-07-03T01:22:34Z",
     "homeTeam": {
       "id": 765,
       "name": "Portugal",
@@ -5584,11 +5584,11 @@
     },
     "id": 537429,
     "utcDate": "2026-07-03T03:00:00Z",
-    "status": "LIVE",
+    "status": "IN_PLAY",
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-03T04:11:00Z",
+    "lastUpdated": "2026-07-03T04:12:01Z",
     "homeTeam": {
       "id": 788,
       "name": "Switzerland",
