@@ -5522,7 +5522,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-03T00:32:29Z",
+    "lastUpdated": "2026-07-03T00:58:39Z",
     "homeTeam": {
       "id": 765,
       "name": "Portugal",
@@ -5538,10 +5538,10 @@
       "crest": "https://crests.football-data.org/799.svg"
     },
     "score": {
-      "winner": "DRAW",
+      "winner": "HOME_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": 1,
+        "home": 2,
         "away": 1
       },
       "halfTime": {
