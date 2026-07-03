@@ -5650,11 +5650,11 @@
     },
     "id": 537428,
     "utcDate": "2026-07-03T18:00:00Z",
-    "status": "IN_PLAY",
+    "status": "FINISHED",
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-03T20:49:15Z",
+    "lastUpdated": "2026-07-03T20:56:39Z",
     "homeTeam": {
       "id": 779,
       "name": "Australia",
@@ -5673,8 +5673,8 @@
       "winner": null,
       "duration": "PENALTY_SHOOTOUT",
       "fullTime": {
-        "home": 2,
-        "away": 2
+        "home": 3,
+        "away": 5
       },
       "halfTime": {
         "home": 0,
