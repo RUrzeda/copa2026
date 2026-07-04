@@ -5872,7 +5872,7 @@
     "matchday": null,
     "stage": "LAST_16",
     "group": null,
-    "lastUpdated": "2026-07-04T18:47:48Z",
+    "lastUpdated": "2026-07-04T18:50:55Z",
     "homeTeam": {
       "id": 828,
       "name": "Canada",
@@ -5892,7 +5892,7 @@
       "duration": "REGULAR",
       "fullTime": {
         "home": 0,
-        "away": 1
+        "away": 2
       },
       "halfTime": {
         "home": 0,
