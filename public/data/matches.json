@@ -5802,11 +5802,11 @@
     },
     "id": 537430,
     "utcDate": "2026-07-04T01:30:00Z",
-    "status": "LIVE",
+    "status": "IN_PLAY",
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-04T02:43:55Z",
+    "lastUpdated": "2026-07-04T02:44:50Z",
     "homeTeam": {
       "id": 818,
       "name": "Colombia",
