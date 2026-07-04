@@ -5732,7 +5732,7 @@
     "matchday": null,
     "stage": "LAST_32",
     "group": null,
-    "lastUpdated": "2026-07-04T00:23:06Z",
+    "lastUpdated": "2026-07-04T00:25:46Z",
     "homeTeam": {
       "id": 762,
       "name": "Argentina",
@@ -5764,7 +5764,7 @@
       },
       "extraTime": {
         "home": 1,
-        "away": 0
+        "away": 1
       }
     },
     "odds": {
