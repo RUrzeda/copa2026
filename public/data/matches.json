@@ -6000,11 +6000,11 @@
     },
     "id": 537377,
     "utcDate": "2026-07-05T20:00:00Z",
-    "status": "PAUSED",
+    "status": "LIVE",
     "matchday": null,
     "stage": "LAST_16",
     "group": null,
-    "lastUpdated": "2026-07-05T20:57:31Z",
+    "lastUpdated": "2026-07-05T21:12:48Z",
     "homeTeam": {
       "id": 764,
       "name": "Brazil",
