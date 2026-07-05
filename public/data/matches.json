@@ -6004,7 +6004,7 @@
     "matchday": null,
     "stage": "LAST_16",
     "group": null,
-    "lastUpdated": "2026-07-05T22:00:24Z",
+    "lastUpdated": "2026-07-05T22:07:25Z",
     "homeTeam": {
       "id": 764,
       "name": "Brazil",
@@ -6023,7 +6023,7 @@
       "winner": "AWAY_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": 0,
+        "home": 1,
         "away": 2
       },
       "halfTime": {
