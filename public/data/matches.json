@@ -6132,11 +6132,11 @@
     },
     "id": 537379,
     "utcDate": "2026-07-06T19:00:00Z",
-    "status": "LIVE",
+    "status": "IN_PLAY",
     "matchday": null,
     "stage": "LAST_16",
     "group": null,
-    "lastUpdated": "2026-07-06T20:12:51Z",
+    "lastUpdated": "2026-07-06T20:14:27Z",
     "homeTeam": {
       "id": 765,
       "name": "Portugal",
