@@ -1360,7 +1360,7 @@
     },
     "playedMatches": 5,
     "goals": 2,
-    "assists": 1,
+    "assists": 2,
     "penalties": null
   },
   {
@@ -1520,32 +1520,32 @@
   },
   {
     "player": {
-      "id": 1878,
-      "name": "Ladislav Krejčí",
-      "firstName": "Ladislav",
-      "lastName": "Krejčí",
-      "dateOfBirth": "1999-04-20",
-      "nationality": "Czech Republic",
-      "section": "Midfield",
+      "id": 129947,
+      "name": "Charles De Ketelaere",
+      "firstName": "Charles",
+      "lastName": "De Ketelaere",
+      "dateOfBirth": "2001-03-10",
+      "nationality": "Belgium",
+      "section": "Offence",
       "position": null,
-      "shirtNumber": null,
-      "lastUpdated": "2026-06-12T03:20:57Z"
+      "shirtNumber": 90,
+      "lastUpdated": "2026-06-01T11:16:30Z"
     },
     "team": {
-      "id": 798,
-      "name": "Czechia",
-      "shortName": "Czechia",
-      "tla": "CZE",
-      "crest": "https://crests.football-data.org/798.svg",
-      "address": "Diskařská 2431/4 Praha 16017",
-      "website": "http://www.fotbal.cz",
-      "founded": 1901,
-      "clubColors": "Red / White / Blue",
+      "id": 805,
+      "name": "Belgium",
+      "shortName": "Belgium",
+      "tla": "BEL",
+      "crest": "https://crests.football-data.org/805.svg",
+      "address": "145, avenue Houba de Strooper Brussels 1020",
+      "website": "https://www.rbfa.be",
+      "founded": 1895,
+      "clubColors": "Red / Black / Yellow",
       "venue": null,
-      "lastUpdated": "2026-06-01T09:42:43Z"
+      "lastUpdated": "2026-06-01T09:43:01Z"
     },
-    "playedMatches": 3,
-    "goals": 1,
+    "playedMatches": 5,
+    "goals": 2,
     "assists": null,
     "penalties": null
   }
