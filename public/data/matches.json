@@ -6202,7 +6202,7 @@
     "matchday": null,
     "stage": "LAST_16",
     "group": null,
-    "lastUpdated": "2026-07-07T01:22:00Z",
+    "lastUpdated": "2026-07-07T01:26:00Z",
     "homeTeam": {
       "id": 771,
       "name": "United States",
@@ -6222,7 +6222,7 @@
       "duration": "REGULAR",
       "fullTime": {
         "home": 1,
-        "away": 2
+        "away": 3
       },
       "halfTime": {
         "home": 1,
