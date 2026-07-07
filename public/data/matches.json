@@ -6268,7 +6268,7 @@
     "matchday": null,
     "stage": "LAST_16",
     "group": null,
-    "lastUpdated": "2026-07-07T18:15:15Z",
+    "lastUpdated": "2026-07-07T22:56:42Z",
     "homeTeam": {
       "id": 762,
       "name": "Argentina",
@@ -6334,7 +6334,7 @@
     "matchday": null,
     "stage": "LAST_16",
     "group": null,
-    "lastUpdated": "2026-07-07T22:55:36Z",
+    "lastUpdated": "2026-07-07T22:56:48Z",
     "homeTeam": {
       "id": 788,
       "name": "Switzerland",
@@ -6353,7 +6353,7 @@
       "winner": null,
       "duration": "PENALTY_SHOOTOUT",
       "fullTime": {
-        "home": 3,
+        "home": 4,
         "away": 3
       },
       "halfTime": {
