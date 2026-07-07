@@ -6202,7 +6202,7 @@
     "matchday": null,
     "stage": "LAST_16",
     "group": null,
-    "lastUpdated": "2026-07-07T00:34:33Z",
+    "lastUpdated": "2026-07-07T00:36:33Z",
     "homeTeam": {
       "id": 771,
       "name": "United States",
@@ -6218,10 +6218,10 @@
       "crest": "https://crests.football-data.org/805.svg"
     },
     "score": {
-      "winner": "AWAY_TEAM",
+      "winner": "DRAW",
       "duration": "REGULAR",
       "fullTime": {
-        "home": 0,
+        "home": 1,
         "away": 1
       },
       "halfTime": {
