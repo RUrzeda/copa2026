@@ -6268,7 +6268,7 @@
     "matchday": null,
     "stage": "LAST_16",
     "group": null,
-    "lastUpdated": "2026-07-07T17:59:13Z",
+    "lastUpdated": "2026-07-07T18:01:09Z",
     "homeTeam": {
       "id": 762,
       "name": "Argentina",
@@ -6284,10 +6284,10 @@
       "crest": "https://crests.football-data.org/825.svg"
     },
     "score": {
-      "winner": "DRAW",
+      "winner": "HOME_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": 2,
+        "home": 3,
         "away": 2
       },
       "halfTime": {
