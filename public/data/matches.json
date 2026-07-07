@@ -6268,7 +6268,7 @@
     "matchday": null,
     "stage": "LAST_16",
     "group": null,
-    "lastUpdated": "2026-07-07T17:52:13Z",
+    "lastUpdated": "2026-07-07T17:59:13Z",
     "homeTeam": {
       "id": 762,
       "name": "Argentina",
@@ -6364,7 +6364,14 @@
     "odds": {
       "msg": "Activate Odds-Package in User-Panel to retrieve odds."
     },
-    "referees": []
+    "referees": [
+      {
+        "id": 190010,
+        "name": "Ivan Barton",
+        "type": "REFEREE",
+        "nationality": null
+      }
+    ]
   },
   {
     "area": {
