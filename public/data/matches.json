@@ -6330,11 +6330,11 @@
     },
     "id": 537382,
     "utcDate": "2026-07-07T20:00:00Z",
-    "status": "PAUSED",
+    "status": "FINISHED",
     "matchday": null,
     "stage": "LAST_16",
     "group": null,
-    "lastUpdated": "2026-07-07T22:40:31Z",
+    "lastUpdated": "2026-07-07T22:45:46Z",
     "homeTeam": {
       "id": 788,
       "name": "Switzerland",
@@ -6350,8 +6350,8 @@
       "crest": "https://crests.football-data.org/818.svg"
     },
     "score": {
-      "winner": "DRAW",
-      "duration": "EXTRA_TIME",
+      "winner": null,
+      "duration": "PENALTY_SHOOTOUT",
       "fullTime": {
         "home": 0,
         "away": 0
@@ -6361,10 +6361,14 @@
         "away": 0
       },
       "regularTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 0
       },
       "extraTime": {
+        "home": 0,
+        "away": 0
+      },
+      "penalties": {
         "home": 0,
         "away": 0
       }
