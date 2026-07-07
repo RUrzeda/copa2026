@@ -6334,7 +6334,7 @@
     "matchday": null,
     "stage": "LAST_16",
     "group": null,
-    "lastUpdated": "2026-07-07T22:51:58Z",
+    "lastUpdated": "2026-07-07T22:54:06Z",
     "homeTeam": {
       "id": 788,
       "name": "Switzerland",
@@ -6353,8 +6353,8 @@
       "winner": null,
       "duration": "PENALTY_SHOOTOUT",
       "fullTime": {
-        "home": 2,
-        "away": 2
+        "home": 4,
+        "away": 3
       },
       "halfTime": {
         "home": 0,
