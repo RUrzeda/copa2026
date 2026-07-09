@@ -6412,7 +6412,7 @@
     "matchday": null,
     "stage": "QUARTER_FINALS",
     "group": null,
-    "lastUpdated": "2026-07-09T21:24:52Z",
+    "lastUpdated": "2026-07-09T21:29:28Z",
     "homeTeam": {
       "id": 773,
       "name": "France",
@@ -6428,10 +6428,10 @@
       "crest": "https://crests.football-data.org/morocco.svg"
     },
     "score": {
-      "winner": "DRAW",
+      "winner": "HOME_TEAM",
       "duration": "REGULAR",
       "fullTime": {
-        "home": 0,
+        "home": 1,
         "away": 0
       },
       "halfTime": {
