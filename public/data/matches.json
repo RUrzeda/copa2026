@@ -6408,11 +6408,11 @@
     },
     "id": 537383,
     "utcDate": "2026-07-09T20:00:00Z",
-    "status": "PAUSED",
+    "status": "LIVE",
     "matchday": null,
     "stage": "QUARTER_FINALS",
     "group": null,
-    "lastUpdated": "2026-07-09T20:56:10Z",
+    "lastUpdated": "2026-07-09T21:14:37Z",
     "homeTeam": {
       "id": 773,
       "name": "France",
