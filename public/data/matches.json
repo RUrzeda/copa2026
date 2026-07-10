@@ -6474,11 +6474,11 @@
     },
     "id": 537384,
     "utcDate": "2026-07-10T19:00:00Z",
-    "status": "IN_PLAY",
+    "status": "PAUSED",
     "matchday": null,
     "stage": "QUARTER_FINALS",
     "group": null,
-    "lastUpdated": "2026-07-10T19:47:07Z",
+    "lastUpdated": "2026-07-10T19:56:43Z",
     "homeTeam": {
       "id": 760,
       "name": "Spain",
@@ -6501,8 +6501,8 @@
         "away": 1
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       }
     },
     "odds": {
