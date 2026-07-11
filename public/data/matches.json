@@ -6540,11 +6540,11 @@
     },
     "id": 537385,
     "utcDate": "2026-07-11T21:00:00Z",
-    "status": "PAUSED",
+    "status": "FINISHED",
     "matchday": null,
     "stage": "QUARTER_FINALS",
     "group": null,
-    "lastUpdated": "2026-07-11T23:31:55Z",
+    "lastUpdated": "2026-07-11T23:53:31Z",
     "homeTeam": {
       "id": 8872,
       "name": "Norway",
