@@ -6688,11 +6688,11 @@
     },
     "id": 537387,
     "utcDate": "2026-07-14T19:00:00Z",
-    "status": "IN_PLAY",
+    "status": "PAUSED",
     "matchday": null,
     "stage": "SEMI_FINALS",
     "group": null,
-    "lastUpdated": "2026-07-14T19:27:19Z",
+    "lastUpdated": "2026-07-14T19:56:40Z",
     "homeTeam": {
       "id": 773,
       "name": "France",
@@ -6715,8 +6715,8 @@
         "away": 1
       },
       "halfTime": {
-        "home": null,
-        "away": null
+        "home": 0,
+        "away": 1
       }
     },
     "odds": {
