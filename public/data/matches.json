@@ -6758,7 +6758,7 @@
     "matchday": null,
     "stage": "SEMI_FINALS",
     "group": null,
-    "lastUpdated": "2026-07-15T20:53:55Z",
+    "lastUpdated": "2026-07-15T20:57:54Z",
     "homeTeam": {
       "id": 770,
       "name": "England",
@@ -6774,11 +6774,11 @@
       "crest": "https://crests.football-data.org/762.png"
     },
     "score": {
-      "winner": "DRAW",
+      "winner": "AWAY_TEAM",
       "duration": "REGULAR",
       "fullTime": {
         "home": 1,
-        "away": 1
+        "away": 2
       },
       "halfTime": {
         "home": 0,
