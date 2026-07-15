@@ -6754,11 +6754,11 @@
     },
     "id": 537388,
     "utcDate": "2026-07-15T19:00:00Z",
-    "status": "IN_PLAY",
+    "status": "FINISHED",
     "matchday": null,
     "stage": "SEMI_FINALS",
     "group": null,
-    "lastUpdated": "2026-07-15T20:59:11Z",
+    "lastUpdated": "2026-07-15T21:09:25Z",
     "homeTeam": {
       "id": 770,
       "name": "England",
