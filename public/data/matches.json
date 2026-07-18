@@ -6820,11 +6820,11 @@
     },
     "id": 537389,
     "utcDate": "2026-07-18T21:00:00Z",
-    "status": "IN_PLAY",
+    "status": "FINISHED",
     "matchday": null,
     "stage": "THIRD_PLACE",
     "group": null,
-    "lastUpdated": "2026-07-18T23:06:48Z",
+    "lastUpdated": "2026-07-18T23:08:00Z",
     "homeTeam": {
       "id": 773,
       "name": "France",
