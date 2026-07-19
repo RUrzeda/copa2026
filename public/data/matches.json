@@ -6886,11 +6886,11 @@
     },
     "id": 537390,
     "utcDate": "2026-07-19T19:00:00Z",
-    "status": "LIVE",
+    "status": "FINISHED",
     "matchday": null,
     "stage": "FINAL",
     "group": null,
-    "lastUpdated": "2026-07-19T21:47:52Z",
+    "lastUpdated": "2026-07-19T22:07:18Z",
     "homeTeam": {
       "id": 760,
       "name": "Spain",
@@ -6907,7 +6907,7 @@
     },
     "score": {
       "winner": "HOME_TEAM",
-      "duration": "REGULAR",
+      "duration": "EXTRA_TIME",
       "fullTime": {
         "home": 1,
         "away": 0
@@ -6921,7 +6921,7 @@
         "away": null
       },
       "extraTime": {
-        "home": 0,
+        "home": 1,
         "away": 0
       }
     },
