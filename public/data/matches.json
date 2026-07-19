@@ -6890,7 +6890,7 @@
     "matchday": null,
     "stage": "FINAL",
     "group": null,
-    "lastUpdated": "2026-07-19T22:07:18Z",
+    "lastUpdated": "2026-07-19T22:12:40Z",
     "homeTeam": {
       "id": 760,
       "name": "Spain",
@@ -6907,7 +6907,7 @@
     },
     "score": {
       "winner": "HOME_TEAM",
-      "duration": "EXTRA_TIME",
+      "duration": "REGULAR",
       "fullTime": {
         "home": 1,
         "away": 0
